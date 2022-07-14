@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct PrimeraPantallaView: View {
     var body: some View {
         ZStack{
             Image("FitnesLogo")
@@ -97,6 +97,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        PrimeraPantallaView()
     }
 }

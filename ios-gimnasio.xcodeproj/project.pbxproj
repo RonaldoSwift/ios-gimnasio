@@ -16,7 +16,7 @@
 		FB7F7128287906CA001DC774 /* ios_gimnasioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7127287906CA001DC774 /* ios_gimnasioTests.swift */; };
 		FB7F7132287906CA001DC774 /* ios_gimnasioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7131287906CA001DC774 /* ios_gimnasioUITests.swift */; };
 		FB7F7134287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */; };
-		FB7F71422879120E001DC774 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F71412879120E001DC774 /* LoginView.swift */; };
+		FB7F71422879120E001DC774 /* PrimeraPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F71412879120E001DC774 /* PrimeraPantallaView.swift */; };
 		FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7145287FB5D2001DC774 /* prueba.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,7 @@
 		FB7F712D287906CA001DC774 /* ios-gimnasioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-gimnasioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7F7131287906CA001DC774 /* ios_gimnasioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioUITests.swift; sourceTree = "<group>"; };
 		FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FB7F71412879120E001DC774 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FB7F71412879120E001DC774 /* PrimeraPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeraPantallaView.swift; sourceTree = "<group>"; };
 		FB7F7145287FB5D2001DC774 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +142,7 @@
 		FB7F71402879115C001DC774 /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
-				FB7F71412879120E001DC774 /* LoginView.swift */,
+				FB7F71412879120E001DC774 /* PrimeraPantallaView.swift */,
 			);
 			path = Pantallas;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 				FB7F711B287906C9001DC774 /* Persistence.swift in Sources */,
 				FB7F7114287906C1001DC774 /* ContentView.swift in Sources */,
 				FB7F711E287906C9001DC774 /* ios_gimnasio.xcdatamodeld in Sources */,
-				FB7F71422879120E001DC774 /* LoginView.swift in Sources */,
+				FB7F71422879120E001DC774 /* PrimeraPantallaView.swift in Sources */,
 				FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */,
 				FB7F7112287906C1001DC774 /* ios_gimnasioApp.swift in Sources */,
 			);
