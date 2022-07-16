@@ -11,7 +11,8 @@ internal enum L10n {
     
     internal enum Bienvenida {
         
-        internal static let title = L10n.tr("Localizable", "Bienvenido.Title")
+        internal static let title = L10n.tr("Localizable", "Bienvenida.Title")
+        internal static let continueWithFacebook = L10n.tr("Localizable", "Bienvenida.TextoDeFacebook")
         
     }
     

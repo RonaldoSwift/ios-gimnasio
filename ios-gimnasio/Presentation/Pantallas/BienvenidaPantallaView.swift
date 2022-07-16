@@ -82,7 +82,7 @@ struct BienvenidaPantallaView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 80.0, height: 80.0, alignment: .center)
                         .clipShape(Circle())
-                    Text("Continuar como facebook")
+                    Text(L10n.Bienvenida.continueWithFacebook)
                     
                 }
                 .foregroundColor(Color.white)
