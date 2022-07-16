@@ -25,7 +25,7 @@ struct BienvenidaPantallaView: View {
                 Text("TUS MEJORES OPCIONES DE ENTRENAMIENTO")
                     .font(.title3)
                     .frame(maxWidth: .infinity)
-                    .background(Color.white)
+                    .background(Color(Assets.Colours.primary.name))
                     .border(Color.white, width: 3.0)
                     .cornerRadius(10)
                     .padding()
