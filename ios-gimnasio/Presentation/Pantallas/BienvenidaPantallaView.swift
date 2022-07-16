@@ -14,8 +14,7 @@ struct BienvenidaPantallaView: View {
                 .resizable()
             VStack{
                 Text(L10n.Bienvenida.title)
-                    .bold()
-                    .font(.title2)
+                    .font(.custom("Poppins-Bold", size: 36))
                     .frame(maxWidth: .infinity)
                     .border(Color.black, width: 3.0)
                     .cornerRadius(10)
@@ -102,7 +101,7 @@ struct LoginView_Previews: PreviewProvider {
             .environment(\.locale, .init(identifier: "en"))
         
         // 1
-        BienvenidaPantallaView()
-            .environment(\.locale, .init(identifier: "es"))
+        /* BienvenidaPantallaView()
+            .environment(\.locale, .init(identifier: "es"))*/
     }
 }
