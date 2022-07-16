@@ -16,6 +16,7 @@
 		FB7F7128287906CA001DC774 /* ios_gimnasioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7127287906CA001DC774 /* ios_gimnasioTests.swift */; };
 		FB7F7132287906CA001DC774 /* ios_gimnasioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7131287906CA001DC774 /* ios_gimnasioUITests.swift */; };
 		FB7F7134287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */; };
+		FBB3F5B828823CD1003B26BF /* cuartaPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3F5B728823CD1003B26BF /* cuartaPantallaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FB7F712D287906CA001DC774 /* ios-gimnasioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-gimnasioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7F7131287906CA001DC774 /* ios_gimnasioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioUITests.swift; sourceTree = "<group>"; };
 		FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBB3F5B728823CD1003B26BF /* cuartaPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cuartaPantallaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				FB7F711A287906C9001DC774 /* Persistence.swift */,
 				FB7F711C287906C9001DC774 /* ios_gimnasio.xcdatamodeld */,
 				FB7F7117287906C9001DC774 /* Preview Content */,
+				FBB3F5B728823CD1003B26BF /* cuartaPantallaView.swift */,
 			);
 			path = "ios-gimnasio";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB3F5B828823CD1003B26BF /* cuartaPantallaView.swift in Sources */,
 				FB7F711B287906C9001DC774 /* Persistence.swift in Sources */,
 				FB7F7114287906C1001DC774 /* ContentView.swift in Sources */,
 				FB7F711E287906C9001DC774 /* ios_gimnasio.xcdatamodeld in Sources */,
