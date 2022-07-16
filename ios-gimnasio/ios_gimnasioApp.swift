@@ -13,7 +13,7 @@ struct ios_gimnasioApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            terceraPantallaView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
