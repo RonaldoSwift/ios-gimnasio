@@ -31,6 +31,7 @@
 		2B86A31D28833F06001E20A7 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B86A30B28833F06001E20A7 /* Poppins-Bold.ttf */; };
 		2B86A31E28833F06001E20A7 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B86A30C28833F06001E20A7 /* Poppins-ExtraBold.ttf */; };
 		2B86A31F28833F06001E20A7 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B86A30D28833F06001E20A7 /* Poppins-BlackItalic.ttf */; };
+		2B86A32328834C74001E20A7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A32228834C74001E20A7 /* Assets.swift */; };
 		FB7F7112287906C1001DC774 /* ios_gimnasioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */; };
 		FB7F7114287906C1001DC774 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7113287906C1001DC774 /* ContentView.swift */; };
 		FB7F7116287906C9001DC774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7F7115287906C9001DC774 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		2B86A30C28833F06001E20A7 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		2B86A30D28833F06001E20A7 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		2B86A321288340E3001E20A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2B86A32228834C74001E20A7 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		FB7F710E287906C1001DC774 /* ios-gimnasio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gimnasio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioApp.swift; sourceTree = "<group>"; };
 		FB7F7113287906C1001DC774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				2B86A2F628832C0A001E20A7 /* L10n.swift */,
+				2B86A32228834C74001E20A7 /* Assets.swift */,
 			);
 			path = Generado;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			files = (
 				FB7F711B287906C9001DC774 /* Persistence.swift in Sources */,
 				FB7F7114287906C1001DC774 /* ContentView.swift in Sources */,
+				2B86A32328834C74001E20A7 /* Assets.swift in Sources */,
 				FB7F711E287906C9001DC774 /* ios_gimnasio.xcdatamodeld in Sources */,
 				2B86A2F9288332F7001E20A7 /* data.swift in Sources */,
 				2B86A2E82883236D001E20A7 /* MiCuentaPantallaView.swift in Sources */,

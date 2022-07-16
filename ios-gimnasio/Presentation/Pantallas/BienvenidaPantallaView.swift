@@ -76,7 +76,7 @@ struct BienvenidaPantallaView: View {
                 Button {
                     print("Hola mundo")
                 } label: {
-                    Image("FacebookLog")
+                    Image(uiImage: Assets.Bienvenida.facebookLog.image)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 80.0, height: 80.0, alignment: .center)
