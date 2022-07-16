@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB3D67D32880DD8600556A44 /* terceraPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D67D22880DD8600556A44 /* terceraPantallaView.swift */; };
+		FB0625B5288079A200F50484 /* segundaPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0625B4288079A200F50484 /* segundaPantallaView.swift */; };
 		FB7F7112287906C1001DC774 /* ios_gimnasioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */; };
 		FB7F7114287906C1001DC774 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7113287906C1001DC774 /* ContentView.swift */; };
 		FB7F7116287906C9001DC774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7F7115287906C9001DC774 /* Assets.xcassets */; };
@@ -17,6 +17,8 @@
 		FB7F7128287906CA001DC774 /* ios_gimnasioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7127287906CA001DC774 /* ios_gimnasioTests.swift */; };
 		FB7F7132287906CA001DC774 /* ios_gimnasioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7131287906CA001DC774 /* ios_gimnasioUITests.swift */; };
 		FB7F7134287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */; };
+		FB7F71422879120E001DC774 /* PrimeraPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F71412879120E001DC774 /* PrimeraPantallaView.swift */; };
+		FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7145287FB5D2001DC774 /* prueba.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB3D67D22880DD8600556A44 /* terceraPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = terceraPantallaView.swift; sourceTree = "<group>"; };
+		FB0625B4288079A200F50484 /* segundaPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segundaPantallaView.swift; sourceTree = "<group>"; };
 		FB7F710E287906C1001DC774 /* ios-gimnasio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gimnasio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioApp.swift; sourceTree = "<group>"; };
 		FB7F7113287906C1001DC774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		FB7F712D287906CA001DC774 /* ios-gimnasioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-gimnasioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7F7131287906CA001DC774 /* ios_gimnasioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioUITests.swift; sourceTree = "<group>"; };
 		FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB7F71412879120E001DC774 /* PrimeraPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeraPantallaView.swift; sourceTree = "<group>"; };
+		FB7F7145287FB5D2001DC774 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +104,15 @@
 		FB7F7110287906C1001DC774 /* ios-gimnasio */ = {
 			isa = PBXGroup;
 			children = (
+				FB7F7143287F1DD7001DC774 /* models */,
+				FB7F71402879115C001DC774 /* Pantallas */,
 				FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */,
 				FB7F7113287906C1001DC774 /* ContentView.swift */,
 				FB7F7115287906C9001DC774 /* Assets.xcassets */,
 				FB7F711A287906C9001DC774 /* Persistence.swift */,
 				FB7F711C287906C9001DC774 /* ios_gimnasio.xcdatamodeld */,
 				FB7F7117287906C9001DC774 /* Preview Content */,
-				FB3D67D22880DD8600556A44 /* terceraPantallaView.swift */,
+				FB0625B4288079A200F50484 /* segundaPantallaView.swift */,
 			);
 			path = "ios-gimnasio";
 			sourceTree = "<group>";
@@ -134,6 +140,22 @@
 				FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */,
 			);
 			path = "ios-gimnasioUITests";
+			sourceTree = "<group>";
+		};
+		FB7F71402879115C001DC774 /* Pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				FB7F71412879120E001DC774 /* PrimeraPantallaView.swift */,
+			);
+			path = Pantallas;
+			sourceTree = "<group>";
+		};
+		FB7F7143287F1DD7001DC774 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FB7F7145287FB5D2001DC774 /* prueba.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +291,8 @@
 				FB7F711B287906C9001DC774 /* Persistence.swift in Sources */,
 				FB7F7114287906C1001DC774 /* ContentView.swift in Sources */,
 				FB7F711E287906C9001DC774 /* ios_gimnasio.xcdatamodeld in Sources */,
+				FB7F71422879120E001DC774 /* PrimeraPantallaView.swift in Sources */,
+				FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */,
 				FB7F7112287906C1001DC774 /* ios_gimnasioApp.swift in Sources */,
 				FB3D67D32880DD8600556A44 /* terceraPantallaView.swift in Sources */,
 			);
