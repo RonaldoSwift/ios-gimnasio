@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0625B5288079A200F50484 /* segundaPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0625B4288079A200F50484 /* segundaPantallaView.swift */; };
 		FB7F7112287906C1001DC774 /* ios_gimnasioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */; };
 		FB7F7114287906C1001DC774 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7113287906C1001DC774 /* ContentView.swift */; };
 		FB7F7116287906C9001DC774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7F7115287906C9001DC774 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0625B4288079A200F50484 /* segundaPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segundaPantallaView.swift; sourceTree = "<group>"; };
 		FB7F710E287906C1001DC774 /* ios-gimnasio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gimnasio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioApp.swift; sourceTree = "<group>"; };
 		FB7F7113287906C1001DC774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				FB7F711A287906C9001DC774 /* Persistence.swift */,
 				FB7F711C287906C9001DC774 /* ios_gimnasio.xcdatamodeld */,
 				FB7F7117287906C9001DC774 /* Preview Content */,
+				FB0625B4288079A200F50484 /* segundaPantallaView.swift */,
 			);
 			path = "ios-gimnasio";
 			sourceTree = "<group>";
