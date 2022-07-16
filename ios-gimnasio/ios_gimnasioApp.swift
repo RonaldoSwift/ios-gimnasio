@@ -13,8 +13,8 @@ struct ios_gimnasioApp: App {
 
     var body: some Scene {
         WindowGroup {
-            segundaPantallaView()
-                //.environment(\.managedObjectContext, persistenceController.container.viewContext)
+            PrimeraPantallaView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
