@@ -10,6 +10,8 @@
 		2B86A2E6288322F4001E20A7 /* RegistroPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2E5288322F4001E20A7 /* RegistroPantallaView.swift */; };
 		2B86A2E82883236D001E20A7 /* MiCuentaPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2E72883236D001E20A7 /* MiCuentaPantallaView.swift */; };
 		2B86A2EA288323DA001E20A7 /* UbicacionPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2E9288323DA001E20A7 /* UbicacionPantallaView.swift */; };
+		2B86A2F1288329A9001E20A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B86A2F3288329A9001E20A7 /* Localizable.strings */; };
+		2B86A2F728832C0A001E20A7 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2F628832C0A001E20A7 /* L10n.swift */; };
 		FB7F7112287906C1001DC774 /* ios_gimnasioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */; };
 		FB7F7114287906C1001DC774 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7113287906C1001DC774 /* ContentView.swift */; };
 		FB7F7116287906C9001DC774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7F7115287906C9001DC774 /* Assets.xcassets */; };
@@ -44,6 +46,9 @@
 		2B86A2E5288322F4001E20A7 /* RegistroPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroPantallaView.swift; sourceTree = "<group>"; };
 		2B86A2E72883236D001E20A7 /* MiCuentaPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCuentaPantallaView.swift; sourceTree = "<group>"; };
 		2B86A2E9288323DA001E20A7 /* UbicacionPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbicacionPantallaView.swift; sourceTree = "<group>"; };
+		2B86A2F2288329A9001E20A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B86A2F4288329FD001E20A7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B86A2F628832C0A001E20A7 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		FB7F710E287906C1001DC774 /* ios-gimnasio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gimnasio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioApp.swift; sourceTree = "<group>"; };
 		FB7F7113287906C1001DC774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +90,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B86A2EB28832745001E20A7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2B86A2F528832AD6001E20A7 /* Generado */,
+				FB7F71402879115C001DC774 /* Pantallas */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2B86A2EC28832752001E20A7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2B86A2ED2883275B001E20A7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FB7F7143287F1DD7001DC774 /* models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2B86A2EE288327D1001E20A7 /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				FB7F7115287906C9001DC774 /* Assets.xcassets */,
+				2B86A2F3288329A9001E20A7 /* Localizable.strings */,
+			);
+			path = Recursos;
+			sourceTree = "<group>";
+		};
+		2B86A2F528832AD6001E20A7 /* Generado */ = {
+			isa = PBXGroup;
+			children = (
+				2B86A2F628832C0A001E20A7 /* L10n.swift */,
+			);
+			path = Generado;
+			sourceTree = "<group>";
+		};
 		FB7F7105287906C0001DC774 = {
 			isa = PBXGroup;
 			children = (
@@ -108,11 +154,12 @@
 		FB7F7110287906C1001DC774 /* ios-gimnasio */ = {
 			isa = PBXGroup;
 			children = (
-				FB7F7143287F1DD7001DC774 /* models */,
-				FB7F71402879115C001DC774 /* Pantallas */,
+				2B86A2EE288327D1001E20A7 /* Recursos */,
+				2B86A2ED2883275B001E20A7 /* Domain */,
+				2B86A2EC28832752001E20A7 /* Data */,
+				2B86A2EB28832745001E20A7 /* Presentation */,
 				FB7F7111287906C1001DC774 /* ios_gimnasioApp.swift */,
 				FB7F7113287906C1001DC774 /* ContentView.swift */,
-				FB7F7115287906C9001DC774 /* Assets.xcassets */,
 				FB7F711A287906C9001DC774 /* Persistence.swift */,
 				FB7F711C287906C9001DC774 /* ios_gimnasio.xcdatamodeld */,
 				FB7F7117287906C9001DC774 /* Preview Content */,
@@ -250,6 +297,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FB7F7105287906C0001DC774;
 			productRefGroup = FB7F710F287906C1001DC774 /* Products */;
@@ -269,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7F7119287906C9001DC774 /* Preview Assets.xcassets in Resources */,
+				2B86A2F1288329A9001E20A7 /* Localizable.strings in Resources */,
 				FB7F7116287906C9001DC774 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +347,7 @@
 				FB7F7114287906C1001DC774 /* ContentView.swift in Sources */,
 				FB7F711E287906C9001DC774 /* ios_gimnasio.xcdatamodeld in Sources */,
 				2B86A2E82883236D001E20A7 /* MiCuentaPantallaView.swift in Sources */,
+				2B86A2F728832C0A001E20A7 /* L10n.swift in Sources */,
 				FB7F71422879120E001DC774 /* BienvenidaPantallaView.swift in Sources */,
 				2B86A2EA288323DA001E20A7 /* UbicacionPantallaView.swift in Sources */,
 				FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */,
@@ -338,11 +388,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		2B86A2F3288329A9001E20A7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B86A2F2288329A9001E20A7 /* en */,
+				2B86A2F4288329FD001E20A7 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FB7F7135287906CA001DC774 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -404,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

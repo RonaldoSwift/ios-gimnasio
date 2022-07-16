@@ -13,7 +13,7 @@ struct BienvenidaPantallaView: View {
             Image("FitnesLogo")
                 .resizable()
             VStack{
-                Text("BIENVENIDOS A STRONG FITNESS")
+                Text(L10n.Bienvenida.title)
                     .bold()
                     .font(.title2)
                     .frame(maxWidth: .infinity)
@@ -97,6 +97,12 @@ struct BienvenidaPantallaView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
+        // 1
         BienvenidaPantallaView()
+            .environment(\.locale, .init(identifier: "en"))
+        
+        // 1
+        BienvenidaPantallaView()
+            .environment(\.locale, .init(identifier: "es"))
     }
 }

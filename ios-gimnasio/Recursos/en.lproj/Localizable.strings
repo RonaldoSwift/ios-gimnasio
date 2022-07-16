@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  ios-gimnasio
+
+  Created by Carlos Leonardo Camilo Vargas Huaman on 16/07/22.
+  
+*/
+
+// MARK: - Bienvenida
+"Bienvenido.Title" = "Welcom to strong fitness";
+"Bienvenido.Description" = "Description";
+"Bienvenido.Register" = "Register";
+"Bienvenido.SignIn" = "Sign in";
+
+// MARK: - Registro
+"Registro.UserName" = "Name of User";
+
+// MARK: - Login
+
+
+// MARK: - MiCuenta
+
+
+
