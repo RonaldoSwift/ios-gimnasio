@@ -26,7 +26,9 @@ internal enum Assets {
     }
     
     internal enum Registro {
-        
+        internal static let signIn = ImageAsset(name: "ImageSignIn")
+        internal static let lock = ImageAsset(name: "lock")
+        internal static let mail = ImageAsset(name: "mail")
     }
     
     internal enum Login {
