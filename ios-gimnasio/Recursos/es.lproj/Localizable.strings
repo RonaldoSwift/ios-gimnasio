@@ -7,11 +7,10 @@
 */
 
 // MARK: - Bienvenida
-"Bienvenida.Title" = "Bienvenidos a String Fitness";
-"Bienvenida.Description" = "Descripción";
-"Bienvenida.Register" = "Registrarse";
-"Bienvenida.SignIn" = "Iniciar Sesion";
-"Bienvenida.TextoDeFacebook" = "Continuar con facebook";
+"Bienvenida.Title" = "Bienvenido a";
+"Bienvenida.Description" = "Entrenamiento de objetivos corporales";
+"Bienvenida.Register" = "Consiga sus objetos corporales con nosotros";
+"Bienvenida.SignIn" = "Empezar a trabajar";
 
 // MARK: - Registro
 "Registro.UserName" = "Nombre de usuario";

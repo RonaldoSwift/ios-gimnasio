@@ -16,11 +16,13 @@
 internal enum Assets {
     
     internal enum Colours {
-        internal static let primary = ColorAsset(name: "Green500")
+        internal static let colorAmarillo = ColorAsset(name: "ColorAmarillo")
     }
     
     internal enum Bienvenida {
         internal static let facebookLog = ImageAsset(name: "FacebookLog")
+        internal static let imageBienvenidaGym = ImageAsset(name: "ImageBienvenidaGym")
+        internal static let fondoGreen = ImageAsset(name: "FondoGreen")
     }
     
     internal enum Registro {
