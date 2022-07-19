@@ -7,11 +7,10 @@
 */
 
 // MARK: - Bienvenida
-"Bienvenida.Title" = "Welcom to strong fitness";
-"Bienvenida.Description" = "Description";
-"Bienvenida.Register" = "Register";
-"Bienvenida.SignIn" = "Sign in";
-"Bienvenida.TextoDeFacebook" = "Continue with Facebook";
+"Bienvenida.Title" = "Welcome to";
+"Bienvenida.Description" = "BODY GOALS  WORKOUT";
+"Bienvenida.Register" = "Achieve your body goals with us";
+"Bienvenida.SignIn" = "Get Started";
 
 // MARK: - Registro
 "Registro.UserName" = "Name of User";
