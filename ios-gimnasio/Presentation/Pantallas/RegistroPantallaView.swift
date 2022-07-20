@@ -8,88 +8,105 @@
 import SwiftUI
 
 struct RegistroPantallaView: View {
-    @State private var nombreDeUsuario: String = ""
-    @State private var correoElectronico: String = ""
-    @State private var contraseña: String = ""
+    
+    @State private var eMail: String = ""
+    @State private var pasword: String = ""
     
     var body: some View {
         ZStack{
-            Image("FitnesLogo")
-                .resizable()
-            VStack(alignment: .center){
-                Text("REGISTRARSE")
-                    .padding()
-                    .frame(width: 150, height: 50, alignment: .leading)
-                    .foregroundColor(Color.black)
-                    .border(Color.blue)
-                
+            
+            VStack{
+                Image(uiImage: Assets.Registro.signIn.image)
+                    .resizable()
+                    .scaledToFit()
                 Spacer()
+            }
+            
+            ZStack{
+                Rectangle()
+                    .fill(
+                        LinearGradient(
+                            gradient: Gradient(
+                                colors: [
+                                    Color.black.opacity(0.1),
+                                    Color("ColorDegradente")
+                                ]),
+                            startPoint: .top,
+                            endPoint: .center
+                        )
+                    )
                 
-                TextField("Nombre del usuario ", text: $nombreDeUsuario)
-                    .padding()
-                    .font(.title2)
-                    .foregroundColor(Color.black)
-                    .frame(maxWidth: .infinity)
-                    .border(Color.black)
-                
-                Spacer()
-                
-                TextField("Correo electronico ", text: $correoElectronico)
-                    .padding()
-                    .font(.title2)
-                    .foregroundColor(Color.black)
-                    .frame(maxWidth: .infinity)
-                    .border(Color.black)
-                
-                Spacer()
-                
-                TextField("Contraseña ", text: $contraseña)
-                    .padding()
-                    .font(.title2)
-                    .foregroundColor(Color.black)
-                    .frame(maxWidth: .infinity)
-                    .border(Color.black)
-                
-                HStack{
-                    Text("Recuerda ejercitarse")
-                        .font(.title2)
-                        .bold()
-                        .foregroundColor(Color.black)
-                        .frame(maxWidth: .infinity)
-                        .border(Color.black)
-                        .cornerRadius(10)
+                VStack{
+                    Spacer()
                     
-                    Text("Politica de privasidad")
-                        .font(.title2)
-                        .bold()
-                        .foregroundColor(Color.blue)
-                        .frame(maxWidth: .infinity)
-                        .border(Color.black)
-                        .cornerRadius(10)
+                    Text(L10n.Registro.title)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .font(.custom("Poppins-Bold", size: 32))
                     
+                    HStack{
+                        Image(uiImage: Assets.Registro.mail.image)
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                        TextField(L10n.Registro.userName, text: $eMail)
+                    }
+                    .frame(width: 326, height: 50)
+                    .font(.custom("Poppins-Light", size: 17))
+                    .foregroundColor(Color.black)
+                    .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
+                    .background(Color.white)
+                    .cornerRadius(15)
+                    
+                    HStack{
+                        Image(uiImage: Assets.Registro.lock.image)
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                        TextField(L10n.Registro.userPasword, text: $pasword)
+                    }
+                    .frame(width: 326, height: 50)
+                    .font(.custom("Poppins-Light", size: 17))
+                    .foregroundColor(Color.black)
+                    .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
+                    .background(Color.white)
+                    .cornerRadius(15)
+                    
+                    
+                    Text(L10n.Registro.forgot)
+                    
+                    ZStack{
+                        
+                        Button {
+                            
+                        } label: {
+                            Text(L10n.Registro.sign)
+                                .padding()
+                                .frame(width: 326, height: 50)
+                                .font(.custom("Poppins-Bold", size: 17))
+                                .foregroundColor(Color.black)
+                                .background(Color(Assets.Colours.colorAmarillo.name))
+                                .cornerRadius(15)
+                        }
+                    }
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                    
+                    HStack{
+                        Text(L10n.Registro.didnt)
+                        
+                        Button {
+                            
+                        } label: {
+                            Text(L10n.Registro.signHup)
+                                .font(.custom("Poppins-Bold", size: 15))
+                                .foregroundColor(Color(Assets.Colours.colorAmarillo.name))
+                        }
+                    }
+                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 30, trailing: 0))
                 }
-                .padding()
-                
-                Spacer()
-                
-                Button {
-                    
-                } label: {
-                    Text("REGISTRARSE")
-                }
-                .padding()
-                .frame(width: 180, height: 50, alignment: .leading)
                 .foregroundColor(Color.white)
-                .font(.title2)
-                .background(Color.blue)
-                .border(Color.blue)
-                .cornerRadius(10)
-                .background(Color.blue)
-                .cornerRadius(10)
-                
+                .padding()
             }
         }
-        .padding()
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -19,7 +19,13 @@ internal enum L10n {
     }
     
     internal enum Registro {
-        
+        internal static let title = L10n.tr("Localizable", "Registro.Title")
+        internal static let userName = L10n.tr("Localizable", "Registro.UserName")
+        internal static let userPasword = L10n.tr("Localizable", "Registro.UserPasword")
+        internal static let forgot = L10n.tr("Localizable", "Registro.Forgot")
+        internal static let sign = L10n.tr("Localizable", "Registro.Sign")
+        internal static let didnt = L10n.tr("Localizable", "Registro.Didnt")
+        internal static let signHup = L10n.tr("Localizable", "Registro.SignHup")
     }
     
     internal enum Login {
