@@ -14,30 +14,35 @@ struct RegistroPantallaView: View {
     
     var body: some View {
         ZStack{
-            Image(uiImage: Assets.Registro.signIn.image)
-                .resizable()
+            
+            VStack{
+                Image(uiImage: Assets.Registro.signIn.image)
+                    .resizable()
+                    .scaledToFit()
+                Spacer()
+            }
             
             ZStack{
                 Rectangle()
                     .fill(
-                        LinearGradient(gradient: Gradient(
-                            colors: [
-                                Color.black.opacity(0.0),
-                                Color("ColorDegradente")
-                            ]),
-                                       startPoint: .top,
-                                       endPoint: .bottom
-                                      )
+                        LinearGradient(
+                            gradient: Gradient(
+                                colors: [
+                                    Color.black.opacity(0.1),
+                                    Color("ColorDegradente")
+                                ]),
+                            startPoint: .top,
+                            endPoint: .center
+                        )
                     )
                 
                 VStack{
-                    
                     Spacer()
                     
                     Text(L10n.Registro.title)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                        .font(.custom("Poppins-SemiBoldItalic", size: 32))
+                        .font(.custom("Poppins-Bold", size: 32))
                     
                     HStack{
                         Image(uiImage: Assets.Registro.mail.image)
@@ -48,9 +53,9 @@ struct RegistroPantallaView: View {
                     .frame(width: 326, height: 50)
                     .font(.custom("Poppins-Light", size: 17))
                     .foregroundColor(Color.black)
+                    .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
                     .background(Color.white)
                     .cornerRadius(15)
-                    .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                     
                     HStack{
                         Image(uiImage: Assets.Registro.lock.image)
@@ -61,9 +66,10 @@ struct RegistroPantallaView: View {
                     .frame(width: 326, height: 50)
                     .font(.custom("Poppins-Light", size: 17))
                     .foregroundColor(Color.black)
+                    .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
                     .background(Color.white)
                     .cornerRadius(15)
-                    .padding(EdgeInsets(top: 5, leading: 0, bottom: 4, trailing: 0))
+                    
                     
                     Text(L10n.Registro.forgot)
                     
@@ -75,7 +81,7 @@ struct RegistroPantallaView: View {
                             Text(L10n.Registro.sign)
                                 .padding()
                                 .frame(width: 326, height: 50)
-                                .font(.custom("Poppins-Medium", size: 17))
+                                .font(.custom("Poppins-Bold", size: 17))
                                 .foregroundColor(Color.black)
                                 .background(Color(Assets.Colours.colorAmarillo.name))
                                 .cornerRadius(15)
@@ -90,6 +96,7 @@ struct RegistroPantallaView: View {
                             
                         } label: {
                             Text(L10n.Registro.signHup)
+                                .font(.custom("Poppins-Bold", size: 15))
                                 .foregroundColor(Color(Assets.Colours.colorAmarillo.name))
                         }
                     }
