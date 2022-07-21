@@ -92,13 +92,13 @@ struct RegistroPantallaView: View {
                     HStack{
                         Text(L10n.Registro.didnt)
                         
-                        Button {
-                            
-                        } label: {
-                            Text(L10n.Registro.signHup)
-                                .font(.custom("Poppins-Bold", size: 15))
-                                .foregroundColor(Color(Assets.Colours.colorAmarillo.name))
-                        }
+                        Text(L10n.Registro.signHup)
+                            .font(.custom("Poppins-Bold", size: 15))
+                            .foregroundColor(Color(Assets.Colours.colorAmarillo.name))
+                            .onTapGesture {
+                                print("Hola")
+                            }
+                        
                     }
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 30, trailing: 0))
                 }

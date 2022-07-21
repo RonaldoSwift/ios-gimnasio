@@ -28,12 +28,19 @@ internal enum L10n {
         internal static let signHup = L10n.tr("Localizable", "Registro.SignHup")
     }
     
-    internal enum Login {
-        
+    internal enum MiCuenta {
+        internal static let title = L10n.tr("Localizable", "MiCuenta.Title")
+        internal static let email = L10n.tr("Localizable", "MiCuenta.Email")
+        internal static let pasword = L10n.tr("Localizable", "MiCuenta.Pasword")
+        internal static let confirmationPasword = L10n.tr("Localizable", "MiCuenta.ConfirmationPasword")
+        internal static let signUp = L10n.tr("Localizable", "MiCuenta.SignUp")
+        internal static let or = L10n.tr("Localizable", "MiCuenta.Or")
+        internal static let ifYou = L10n.tr("Localizable", "MiCuenta.IfYou")
+        internal static let signIn = L10n.tr("Localizable", "MiCuenta.SignIn")
     }
     
     
-    internal enum MiCuenta {
+    internal enum Login {
         
     }
     

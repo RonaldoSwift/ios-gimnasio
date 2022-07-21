@@ -31,11 +31,16 @@ internal enum Assets {
         internal static let mail = ImageAsset(name: "mail")
     }
     
-    internal enum Login {
-        
+    internal enum MiCuenta {
+        internal static let imageSingUp = ImageAsset(name: "ImageSingUp")
+        internal static let mail = ImageAsset(name: "mail")
+        internal static let lock = ImageAsset(name: "lock")
+        internal static let aplee = ImageAsset(name: "aplee")
+        internal static let facebookIcono = ImageAsset(name: "facebookIcono")
+        internal static let googleIcono = ImageAsset(name: "googleIcono")
     }
     
-    internal enum MiCuenta {
+    internal enum Login {
         
     }
     

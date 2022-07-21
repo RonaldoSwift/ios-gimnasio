@@ -1,10 +1,10 @@
 /* 
-  Localizable.strings
-  ios-gimnasio
-
-  Created by Carlos Leonardo Camilo Vargas Huaman on 16/07/22.
-  
-*/
+ Localizable.strings
+ ios-gimnasio
+ 
+ Created by Carlos Leonardo Camilo Vargas Huaman on 16/07/22.
+ 
+ */
 
 // MARK: - Bienvenida
 "Bienvenida.Title" = "Welcome to";
@@ -21,10 +21,14 @@
 "Registro.Didnt" = "Didn´t have any account?";
 "Registro.SignHup" = "Sign hup here";
 
-// MARK: - Login
-
-
 // MARK: - MiCuenta
+"MiCuenta.Title" = "BODY GOALS WORKOUT";
+"MiCuenta.Email" = "Email";
+"MiCuenta.Pasword" = "Pasword";
+"MiCuenta.ConfirmationPasword" = "Confirmation Pasword";
+"MiCuenta.SignUp" = "Sign Up";
+"MiCuenta.Or" = "Or";
+"MiCuenta.IfYou" = "If you have han account?";
+"MiCuenta.SignIn" = "Sign In here";
 
-
-
+// MARK: - Login
