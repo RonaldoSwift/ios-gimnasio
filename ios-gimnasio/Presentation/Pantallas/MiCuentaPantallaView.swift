@@ -36,7 +36,8 @@ struct MiCuentaPantallaView: View {
                         )
                     )
             }
-            VStack{
+            VStack(alignment: .center, spacing: 12){
+                
                 Spacer()
                 
                 Text(L10n.MiCuenta.title)
@@ -50,12 +51,12 @@ struct MiCuentaPantallaView: View {
                         .frame(width: 20, height: 20)
                     TextField(L10n.MiCuenta.email, text: $eMail)
                 }
-                .frame(width: 326, height: 50)
+                .frame(height: 50)
                 .font(.custom("Poppins-Light", size: 17))
                 .foregroundColor(Color.black)
                 .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
                 .background(Color.white)
-                .cornerRadius(15)
+                .cornerRadius(10)
                 
                 HStack{
                     Image(uiImage: Assets.MiCuenta.lock.image)
@@ -63,12 +64,12 @@ struct MiCuentaPantallaView: View {
                         .frame(width: 20, height: 20)
                     TextField(L10n.MiCuenta.pasword, text: $pasword)
                 }
-                .frame(width: 326, height: 50)
+                .frame(height: 50)
                 .font(.custom("Poppins-Light", size: 17))
                 .foregroundColor(Color.black)
                 .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
                 .background(Color.white)
-                .cornerRadius(15)
+                .cornerRadius(10)
                 
                 HStack{
                     Image(uiImage: Assets.MiCuenta.lock.image)
@@ -76,34 +77,38 @@ struct MiCuentaPantallaView: View {
                         .frame(width: 20, height: 20)
                     TextField(L10n.MiCuenta.confirmationPasword, text: $confirmationPasword)
                 }
-                .frame(width: 326, height: 50)
+                .frame(height: 50)
                 .font(.custom("Poppins-Light", size: 17))
                 .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
                 .background(Color.white)
-                .cornerRadius(15)
+                .cornerRadius(10)
                 
-                ZStack{
                     Button {
                         
                     } label: {
                         Text(L10n.MiCuenta.signUp)
                             .padding()
-                            .frame(width: 326, height: 50)
                             .font(.custom("Poppins-Bold", size: 17))
                             .foregroundColor(Color.black)
                             .background(Color("ColorAmarillo"))
-                            .cornerRadius(15)
+                            .cornerRadius(10)
                     }
+                    .frame(width: .infinity, height: 50)
                     
-                }
-                .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                
                 
                 HStack{
-                    Text("─────────")
+                    Rectangle()
+                        .fill(.white)
+                        .frame(width: .infinity, height: 3)
+                    
                     Text(L10n.MiCuenta.or)
-                    Text("─────────")
+                        .foregroundColor(Color.white)
+                    
+                    Rectangle()
+                        .fill(.white)
+                        .frame(width: .infinity, height: 3)
                 }
-                .foregroundColor(Color.white)
                 
                 HStack(alignment: .center, spacing: 25){
                     Button {
@@ -145,8 +150,10 @@ struct MiCuentaPantallaView: View {
                         }
                 }
                 .padding(EdgeInsets(top: 20, leading: 0, bottom: 30, trailing: 0))
+                
             }
-            .padding()
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .padding(30)
         }
         .edgesIgnoringSafeArea(.all)
     }
