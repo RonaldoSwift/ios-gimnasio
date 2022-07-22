@@ -13,7 +13,7 @@ struct ios_gimnasioApp: App {
 
     var body: some Scene {
         WindowGroup {
-            BienvenidaPantallaView()
+            MiCuentaPantallaView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
