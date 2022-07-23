@@ -43,7 +43,6 @@ struct BienvenidaPantallaView: View {
                         Text(L10n.Bienvenida.registrer)
                             .foregroundColor(Color("ColorPlomoEncendido"))
                         
-                        
                         NavigationLink {
                             LoginPantallaView()
                         } label: {
@@ -57,8 +56,8 @@ struct BienvenidaPantallaView: View {
                         }
                         
                     }
-                    .frame(minWidth: 0, maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                    .padding(44)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                    .padding(30)
                 }
             }
             .background(Color.yellow)

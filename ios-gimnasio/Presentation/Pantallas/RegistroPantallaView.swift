@@ -17,7 +17,7 @@ struct RegistroPantallaView: View {
         
         ZStack{
             VStack{
-                Image(uiImage: Assets.MiCuenta.imageSingUp.image)
+                Image(uiImage: Assets.Registro.imageSingUp.image)
                     .resizable()
                     .scaledToFit()
                 Spacer()
@@ -40,16 +40,16 @@ struct RegistroPantallaView: View {
                 
                 Spacer()
                 
-                Text(L10n.MiCuenta.title)
+                Text(L10n.Registro.title)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                     .font(.custom("Poppins-Bold", size: 32))
                 
                 HStack{
-                    Image(uiImage: Assets.MiCuenta.mail.image)
+                    Image(uiImage: Assets.Registro.mail.image)
                         .resizable()
                         .frame(width: 20, height: 20)
-                    TextField(L10n.MiCuenta.email, text: $eMail)
+                    TextField(L10n.Registro.email, text: $eMail)
                 }
                 .frame(height: 50)
                 .font(.custom("Poppins-Light", size: 17))
@@ -59,10 +59,10 @@ struct RegistroPantallaView: View {
                 .cornerRadius(10)
                 
                 HStack{
-                    Image(uiImage: Assets.MiCuenta.lock.image)
+                    Image(uiImage: Assets.Registro.lock.image)
                         .resizable()
                         .frame(width: 20, height: 20)
-                    TextField(L10n.MiCuenta.pasword, text: $pasword)
+                    TextField(L10n.Registro.pasword, text: $pasword)
                 }
                 .frame(height: 50)
                 .font(.custom("Poppins-Light", size: 17))
@@ -72,10 +72,10 @@ struct RegistroPantallaView: View {
                 .cornerRadius(10)
                 
                 HStack{
-                    Image(uiImage: Assets.MiCuenta.lock.image)
+                    Image(uiImage: Assets.Registro.lock.image)
                         .resizable()
                         .frame(width: 20, height: 20)
-                    TextField(L10n.MiCuenta.confirmationPasword, text: $confirmationPasword)
+                    TextField(L10n.Registro.confirmationPasword, text: $confirmationPasword)
                 }
                 .frame(height: 50)
                 .font(.custom("Poppins-Light", size: 17))
@@ -83,26 +83,24 @@ struct RegistroPantallaView: View {
                 .background(Color.white)
                 .cornerRadius(10)
                 
-                    Button {
-                        
-                    } label: {
-                        Text(L10n.MiCuenta.signUp)
-                            .padding()
-                            .font(.custom("Poppins-Bold", size: 17))
-                            .foregroundColor(Color.black)
-                            .background(Color("ColorAmarillo"))
-                            .cornerRadius(10)
-                    }
-                    .frame(width: .infinity, height: 50)
+                Button {
                     
-                
+                } label: {
+                    Text(L10n.Registro.signUp)
+                        .padding()
+                        .frame(width: 326, height: 50)
+                        .font(.custom("Poppins-Bold", size: 17))
+                        .foregroundColor(Color.black)
+                        .background(Color("ColorAmarillo"))
+                        .cornerRadius(10)
+                }
                 
                 HStack{
                     Rectangle()
                         .fill(.white)
                         .frame(width: .infinity, height: 3)
                     
-                    Text(L10n.MiCuenta.or)
+                    Text(L10n.Registro.or)
                         .foregroundColor(Color.white)
                     
                     Rectangle()
@@ -114,7 +112,7 @@ struct RegistroPantallaView: View {
                     Button {
                         
                     } label: {
-                        Image(uiImage: Assets.MiCuenta.aplee.image)
+                        Image(uiImage: Assets.Registro.aplee.image)
                             .resizable()
                             .frame(width: 60, height: 60)
                     }
@@ -122,7 +120,7 @@ struct RegistroPantallaView: View {
                     Button {
                         
                     } label: {
-                        Image(uiImage: Assets.MiCuenta.facebookIcono.image)
+                        Image(uiImage: Assets.Registro.facebookIcono.image)
                             .resizable()
                             .frame(width: 60, height: 60)
                     }
@@ -130,7 +128,7 @@ struct RegistroPantallaView: View {
                     Button {
                         
                     } label: {
-                        Image(uiImage: Assets.MiCuenta.googleIcono.image)
+                        Image(uiImage: Assets.Registro.googleIcono.image)
                             .resizable()
                             .frame(width: 25, height: 27)
                             .padding()
@@ -140,9 +138,9 @@ struct RegistroPantallaView: View {
                     
                 }
                 HStack{
-                    Text(L10n.MiCuenta.ifYou)
+                    Text(L10n.Registro.ifYou)
                         .foregroundColor(Color.white)
-                    Text(L10n.MiCuenta.signIn)
+                    Text(L10n.Registro.signIn)
                         .font(.custom("Poppins-Bold", size: 15))
                         .foregroundColor(Color("ColorAmarillo"))
                         .onTapGesture {

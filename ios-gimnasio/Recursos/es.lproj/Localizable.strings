@@ -12,26 +12,26 @@
 "Bienvenida.Register" = "Consiga sus objetos corporales con nosotros";
 "Bienvenida.SignIn" = "Empezar a trabajar";
 
+// MARK: - Login
+"Login.Title" = "ENTRENAMIENTO DE OBJETIVOS CORPORALES";
+"Login.UserName" = "Envíe un correo electrónico a";
+"Login.UserPasword" = "Contraseña";
+"Login.Forgot" = "Olvidé mi contraseña";
+"Login.Sign" = "Acceder";
+"Login.Didnt" = "¿No tenía ninguna cuenta?";
+"Login.SignHup" = "Regístrese aquí";
+
 // MARK: - Registro
 "Registro.Title" = "ENTRENAMIENTO DE OBJETIVOS CORPORALES";
-"Registro.UserName" = "Envíe un correo electrónico a";
-"Registro.UserPasword" = "Contraseña";
-"Registro.Forgot" = "Olvidé mi contraseña";
-"Registro.Sign" = "Acceder";
-"Registro.Didnt" = "¿No tenía ninguna cuenta?";
-"Registro.SignHup" = "Regístrese aquí";
+"Registro.Email" = "Envíe un correo electrónico a";
+"Registro.Pasword" = "Contraseña";
+"Registro.ConfirmationPasword" = "Contraseña de confirmación";
+"Registro.SignUp" = "Inscríbete";
+"Registro.Or" = "O";
+"Registro.IfYou" = "¿Si tiene una cuenta de han?";
+"Registro.SignIn" = "Regístrese aquí";
 
 // MARK: - MiCuenta
-"MiCuenta.Title" = "ENTRENAMIENTO DE OBJETIVOS CORPORALES";
-"MiCuenta.Email" = "Envíe un correo electrónico a";
-"MiCuenta.Pasword" = "Contraseña";
-"MiCuenta.ConfirmationPasword" = "Contraseña de confirmación";
-"MiCuenta.SignUp" = "Inscríbete";
-"MiCuenta.Or" = "O";
-"MiCuenta.IfYou" = "¿Si tiene una cuenta de han?";
-"MiCuenta.SignIn" = "Regístrese aquí";
-
-// MARK: - Login
 
 
 
