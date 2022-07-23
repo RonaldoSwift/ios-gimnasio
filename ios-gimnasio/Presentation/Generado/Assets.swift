@@ -25,13 +25,13 @@ internal enum Assets {
         internal static let fondoGreen = ImageAsset(name: "FondoGreen")
     }
     
-    internal enum Registro {
+    internal enum Login {
         internal static let signIn = ImageAsset(name: "ImageSignIn")
         internal static let lock = ImageAsset(name: "lock")
         internal static let mail = ImageAsset(name: "mail")
     }
     
-    internal enum MiCuenta {
+    internal enum Registro {
         internal static let imageSingUp = ImageAsset(name: "ImageSingUp")
         internal static let mail = ImageAsset(name: "mail")
         internal static let lock = ImageAsset(name: "lock")
@@ -40,7 +40,7 @@ internal enum Assets {
         internal static let googleIcono = ImageAsset(name: "googleIcono")
     }
     
-    internal enum Login {
+    internal enum MiCuenta {
         
     }
     

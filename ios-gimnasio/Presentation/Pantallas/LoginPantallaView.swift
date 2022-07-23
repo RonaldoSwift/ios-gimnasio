@@ -16,7 +16,7 @@ struct LoginPantallaView: View {
         ZStack{
             
             VStack{
-                Image(uiImage: Assets.Registro.signIn.image)
+                Image(uiImage: Assets.Login.signIn.image)
                     .resizable()
                     .scaledToFit()
                 Spacer()
@@ -39,31 +39,31 @@ struct LoginPantallaView: View {
                 VStack{
                     Spacer()
                     
-                    Text(L10n.Registro.title)
+                    Text(L10n.Login.title)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .font(.custom("Poppins-Bold", size: 32))
                     
                     HStack{
-                        Image(uiImage: Assets.Registro.mail.image)
+                        Image(uiImage: Assets.Login.mail.image)
                             .resizable()
                             .frame(width: 20, height: 20)
-                        TextField(L10n.Registro.userName, text: $eMail)
+                        TextField(L10n.Login.userName, text: $eMail)
                     }
-                    .frame(width: 326, height: 50)
+                    .frame(height: 50)
                     .font(.custom("Poppins-Light", size: 17))
                     .foregroundColor(Color.black)
                     .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
                     .background(Color.white)
-                    .cornerRadius(15)
+                    .cornerRadius(10)
                     
                     HStack{
-                        Image(uiImage: Assets.Registro.lock.image)
+                        Image(uiImage: Assets.Login.lock.image)
                             .resizable()
                             .frame(width: 20, height: 20)
-                        TextField(L10n.Registro.userPasword, text: $pasword)
+                        TextField(L10n.Login.userPasword, text: $pasword)
                     }
-                    .frame(width: 326, height: 50)
+                    .frame(height: 50)
                     .font(.custom("Poppins-Light", size: 17))
                     .foregroundColor(Color.black)
                     .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
@@ -71,14 +71,15 @@ struct LoginPantallaView: View {
                     .cornerRadius(15)
                     
                     
-                    Text(L10n.Registro.forgot)
+                    Text(L10n.Login.forgot)
+                        .foregroundColor(Color.white)
                     
                     ZStack{
                         
-                        Button {
-                            
+                        NavigationLink {
+                            RegistroPantallaView()
                         } label: {
-                            Text(L10n.Registro.sign)
+                            Text(L10n.Login.sign)
                                 .padding()
                                 .frame(width: 326, height: 50)
                                 .font(.custom("Poppins-Bold", size: 17))
@@ -90,9 +91,10 @@ struct LoginPantallaView: View {
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                     
                     HStack{
-                        Text(L10n.Registro.didnt)
+                        Text(L10n.Login.didnt)
+                            .foregroundColor(Color.white)
                         
-                        Text(L10n.Registro.signHup)
+                        Text(L10n.Login.signHup)
                             .font(.custom("Poppins-Bold", size: 15))
                             .foregroundColor(Color(Assets.Colours.colorAmarillo.name))
                             .onTapGesture {
@@ -102,8 +104,8 @@ struct LoginPantallaView: View {
                     }
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 30, trailing: 0))
                 }
-                .foregroundColor(Color.white)
-                .padding()
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .padding(30)
             }
         }
         .edgesIgnoringSafeArea(.all)
