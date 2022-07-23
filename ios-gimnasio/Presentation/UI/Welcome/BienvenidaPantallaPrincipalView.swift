@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BienvenidaPantallaView: View {
+struct BienvenidaPantallaPrincipalView: View {
     var body: some View {
         NavigationView{
             ZStack{
@@ -69,7 +69,7 @@ struct BienvenidaPantallaView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         // 1
-        BienvenidaPantallaView()
+        BienvenidaPantallaPrincipalView()
             .environment(\.locale, .init(identifier: "en"))
         
     }
