@@ -52,6 +52,7 @@
 		FB7F7134287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */; };
 		FB7F71422879120E001DC774 /* BienvenidaPantallaPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F71412879120E001DC774 /* BienvenidaPantallaPrincipalView.swift */; };
 		FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7F7145287FB5D2001DC774 /* prueba.swift */; };
+		FBC4DE292890C61500405903 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DE282890C61500405903 /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		FB7F7133287906CA001DC774 /* ios_gimnasioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gimnasioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB7F71412879120E001DC774 /* BienvenidaPantallaPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BienvenidaPantallaPrincipalView.swift; sourceTree = "<group>"; };
 		FB7F7145287FB5D2001DC774 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
+		FBC4DE282890C61500405903 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7F7145287FB5D2001DC774 /* prueba.swift */,
+				FBC4DE282890C61500405903 /* Section.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				2B86A2E82883236D001E20A7 /* RegistroPantallaView.swift in Sources */,
 				2B86A2F728832C0A001E20A7 /* L10n.swift in Sources */,
 				2B184697288C71F100C901A8 /* GymPantallaView.swift in Sources */,
+				FBC4DE292890C61500405903 /* Section.swift in Sources */,
 				FB7F71422879120E001DC774 /* BienvenidaPantallaPrincipalView.swift in Sources */,
 				2B86A2EA288323DA001E20A7 /* VideoView.swift in Sources */,
 				FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */,

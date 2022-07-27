@@ -11,37 +11,53 @@ struct HomePrincipalPantallaView: View {
     var body: some View {
         
         NavigationView {
-    
             TabView() {
                 HomePantallaView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .background(Color("ColorDegradente"))
+                    .edgesIgnoringSafeArea(.all)
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Home")
                     }
+                
                 GymPantallaView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .background(Color("ColorDegradente"))
+                    .edgesIgnoringSafeArea(.all)
                     .tabItem {
-                        Image(systemName: "house.fill")
+                        Image(systemName: "play.circle")
                         Text("Gym")
                     }
                 
+                
                 BailePantallaView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .background(Color("ColorDegradente"))
+                    .edgesIgnoringSafeArea(.all)
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Baile")
                     }
                 
+                
                 TrainerPantallaView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .background(Color("ColorDegradente"))
+                    .edgesIgnoringSafeArea(.all)
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Trainer")
                     }
                 
                 UsuarioPantallaView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .background(Color("ColorDegradente"))
+                    .edgesIgnoringSafeArea(.all)
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Profile")
                     }
-            
             }
         }
     }
