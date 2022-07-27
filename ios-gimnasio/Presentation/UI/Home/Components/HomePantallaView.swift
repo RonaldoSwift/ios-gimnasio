@@ -8,35 +8,73 @@
 import SwiftUI
 
 struct HomePantallaView: View {
+    
+    let secciones : Array<Section> = [
+        Section.init(
+            id:0,
+            titulo: "Today Workout Plan",
+            subTitulo: "6am - 8am",
+            imagenes: ["imageRanning1", "Planchas", "CuartoDeImagen"],
+            color: Color("ColorAmarillo"),
+            anchoDeImagenes: 148, altoDeImagen: 169),
+        Section.init(
+            id: 1,
+            titulo: "Categories",
+            subTitulo: "See all",
+            imagenes: ["ImageCargandoBarra","Yoga", "Fitnes", "Aerobicos", "Trainer"],
+            color: Color("ColorPlomoEncendido"),
+            anchoDeImagenes: 77, altoDeImagen: 104),
+        Section.init(
+            id: 2,
+            titulo: "Treading",
+            subTitulo: "Sell all",
+            imagenes: ["GymCentres", "TrainerCentres"],
+            color: Color("ColorPlomoEncendido"),
+            anchoDeImagenes: 223, altoDeImagen: 119)
+    ]
+    
     var body: some View {
         ZStack{
             Color("ColorDegradente")
             ScrollView(.vertical){
-            VStack(alignment: .leading) {
-                
-                
-                Cabezera()
-
-                PrimerCuerpo()
-
-                PrimerScrollView()
-
-                SegundoCuerpo()
-
-                SegundoScrollView()
-
-                TercerCuerpo()
-
-                TercerScrollView()
-
-                CuartoCuerpo()
-
-                CuartoScrollView()
-            }
-            .padding()
+                VStack(alignment: .center) {
+                    
+                    Cabezera()
+                    
+                    ForEach(secciones, id: \.id){ elemento in
+                        
+                        SectionGym(
+                            textoTitulo: elemento.titulo,
+                            textoSubTitulo: elemento.subTitulo,
+                            colorSubtitulo: elemento.color,
+                            nombreDeImagenes: elemento.imagenes,
+                            anchoDeImagen: elemento.anchoDeImagenes, altoDeImagen: elemento.altoDeImagen)
+                        
+                    }
+                }
+                .padding()
             }
         }
         .edgesIgnoringSafeArea(.all)
+    }
+    
+    private func SectionGym(
+        textoTitulo: String,
+        textoSubTitulo: String,
+        colorSubtitulo: Color,
+        nombreDeImagenes: [String],
+        anchoDeImagen: CGFloat,
+        altoDeImagen: CGFloat
+    ) -> some View{
+        return VStack{
+            PrimerCuerpo(
+                textoTiTulo: textoTitulo,
+                textoSubtitulo: textoSubTitulo,
+                colorSubtitulo: colorSubtitulo
+            )
+            PrimerScrollView(nombreDeImagenes: nombreDeImagenes, anchoDeImagen: anchoDeImagen, altoDeImagen: altoDeImagen)
+            
+        }
     }
     
     private func Cabezera() -> some View {
@@ -60,90 +98,34 @@ struct HomePantallaView: View {
                 .frame(width: 60, height: 60)
         }
     }
-    private func PrimerCuerpo() -> some View {
-        return HStack(alignment: .center, spacing: 110){
-            Text("Today Workout Plan")
+    private func PrimerCuerpo(textoTiTulo: String,textoSubtitulo: String,colorSubtitulo: Color) -> some View {
+        return HStack(alignment: .center){
+            Text(textoTiTulo)
                 .foregroundColor(Color.white)
                 .font(.custom("Poppins-Italic", size: 17))
-            Text("6am - 8am")
+            Spacer()
+            Text(textoSubtitulo)
                 .font(.custom("Poppins-Italic", size: 18))
-                .foregroundColor(Color("ColorAmarillo"))
+                .foregroundColor(colorSubtitulo)
         }
     }
-    private func PrimerScrollView() -> some View{
+    private func PrimerScrollView(nombreDeImagenes: [String], anchoDeImagen: CGFloat, altoDeImagen: CGFloat) -> some View{
         return ScrollView(.horizontal){
             HStack(alignment: .center){
-                Image("imageRanning1")
-                    .resizable()
-                    .frame(width: 148, height: 169, alignment: .center)
                 
-                Image("Planchas")
-                    .resizable()
-                    .frame(width: 148, height: 169, alignment: .center)
-                
-                Image("Imageincompleto")
-                    .resizable()
-                    .frame(width: 148, height: 169, alignment: .center)
-                
+                ForEach(nombreDeImagenes, id: \.self) { elemento in
+                    Image(elemento)
+                        .resizable()
+                        .frame(width: anchoDeImagen, height: altoDeImagen, alignment: .center)
+                    
+                }
             }
         }
         
     }
-    private func SegundoCuerpo() -> some View{
-        return HStack(alignment: .center, spacing: 210){
-            Text("Cartegories")
-                .foregroundColor(Color.white)
-            
-            Text("See all")
-                .foregroundColor(Color("ColorPlomoEncendido"))
-        }
-        
-    }
-    private func SegundoScrollView() -> some View{
-        return ScrollView(.horizontal){
-            HStack(alignment: .center){
-                Image("ImageCargandoBarra")
-                    .resizable()
-                    .frame(width: 77, height: 104, alignment: .center)
-                Image("Yoga")
-                    .resizable()
-                    .frame(width: 77, height: 104, alignment: .center)
-                Image("Fitnes")
-                    .resizable()
-                    .frame(width: 77, height: 104, alignment: .center)
-                Image("Aerobicos")
-                    .resizable()
-                    .frame(width: 77, height: 104, alignment: .center)
-                Image("Trainer")
-                    .resizable()
-                    .frame(width: 77, height: 104, alignment: .center)
-            }
-        }
-        
-    }
-    private func TercerCuerpo() -> some View{
-        HStack(alignment: .center, spacing: 230){
-            Text("Treding")
-                .foregroundColor(Color.white)
-            
-            Text("Sell all")
-                .foregroundColor(Color("ColorPlomoEncendido"))
-        }
-        
-    }
-    private func TercerScrollView() -> some View {
-        return ScrollView(.horizontal){
-            HStack(alignment: .center){
-                Image("GymCentres")
-                    .resizable()
-                    .frame(width: 223, height: 119, alignment: .center)
-                Image("TrainerCentres")
-                    .resizable()
-                    .frame(width: 223, height: 119, alignment: .center)
-            }
-        }
-        
-    }
+    
+    
+
     private func CuartoCuerpo() -> some View {
         return Text("Discover")
             .foregroundColor(Color.white)
