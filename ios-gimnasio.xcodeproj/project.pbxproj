@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B13AF312893163000CC6457 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13AF302893163000CC6457 /* Brand.swift */; };
 		2B184692288C714A00C901A8 /* HomePrincipalPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B184691288C714A00C901A8 /* HomePrincipalPantallaView.swift */; };
 		2B184694288C717000C901A8 /* GymSedesPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B184693288C717000C901A8 /* GymSedesPantallaView.swift */; };
 		2B184697288C71F100C901A8 /* GymPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B184696288C71F100C901A8 /* GymPantallaView.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B13AF302893163000CC6457 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		2B184691288C714A00C901A8 /* HomePrincipalPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePrincipalPantallaView.swift; sourceTree = "<group>"; };
 		2B184693288C717000C901A8 /* GymSedesPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSedesPantallaView.swift; sourceTree = "<group>"; };
 		2B184696288C71F100C901A8 /* GymPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymPantallaView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B13AF2F2893161F00CC6457 /* Gym */ = {
+			isa = PBXGroup;
+			children = (
+				2B13AF302893163000CC6457 /* Brand.swift */,
+			);
+			path = Gym;
+			sourceTree = "<group>";
+		};
 		2B18468B288C704400C901A8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +379,7 @@
 		FB7F7143287F1DD7001DC774 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				2B13AF2F2893161F00CC6457 /* Gym */,
 				FB7F7145287FB5D2001DC774 /* prueba.swift */,
 				FBC4DE282890C61500405903 /* Section.swift */,
 			);
@@ -535,6 +546,7 @@
 				2B18469B288C720E00C901A8 /* UsuarioPantallaView.swift in Sources */,
 				2B18469D288C724000C901A8 /* HomePantallaView.swift in Sources */,
 				FB7F711E287906C9001DC774 /* ios_gimnasio.xcdatamodeld in Sources */,
+				2B13AF312893163000CC6457 /* Brand.swift in Sources */,
 				2B86A2F9288332F7001E20A7 /* data.swift in Sources */,
 				2B184694288C717000C901A8 /* GymSedesPantallaView.swift in Sources */,
 				2B86A2E82883236D001E20A7 /* RegistroPantallaView.swift in Sources */,
