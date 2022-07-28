@@ -30,7 +30,14 @@ struct HomePantallaView: View {
             subTitulo: "Sell all",
             imagenes: ["GymCentres", "TrainerCentres"],
             color: Color("ColorPlomoEncendido"),
-            anchoDeImagenes: 223, altoDeImagen: 119)
+            anchoDeImagenes: 223, altoDeImagen: 119),
+        Section.init(
+            id: 3,
+            titulo: "Discover",
+            subTitulo: "",
+            imagenes: ["Pesas", "Maquinas"],
+            color: Color("ColorPlomoEncendido"),
+            anchoDeImagenes: 227, altoDeImagen: 97)
     ]
     
     var body: some View {
@@ -73,7 +80,6 @@ struct HomePantallaView: View {
                 colorSubtitulo: colorSubtitulo
             )
             PrimerScrollView(nombreDeImagenes: nombreDeImagenes, anchoDeImagen: anchoDeImagen, altoDeImagen: altoDeImagen)
-            
         }
     }
     
@@ -121,27 +127,6 @@ struct HomePantallaView: View {
                 }
             }
         }
-        
-    }
-    
-    
-
-    private func CuartoCuerpo() -> some View {
-        return Text("Discover")
-            .foregroundColor(Color.white)
-    }
-    private func CuartoScrollView() -> some View {
-        return ScrollView(.horizontal){
-            HStack(alignment: .center){
-                Image("Pesas")
-                    .resizable()
-                    .frame(width: 227, height: 97, alignment: .center)
-                Image("Maquinas")
-                    .resizable()
-                    .frame(width: 227, height: 97, alignment: .center)
-            }
-        }
-        
     }
 }
 
