@@ -40,6 +40,8 @@ struct HomePantallaView: View {
             anchoDeImagenes: 227, altoDeImagen: 97)
     ]
     
+    let homeViewModel: HomeViewModel
+    
     var body: some View {
         ZStack{
             Color("ColorDegradente")
@@ -49,18 +51,25 @@ struct HomePantallaView: View {
                     Cabezera()
                     
                     ForEach(secciones, id: \.id){ elemento in
-                        
                         SectionGym(
-                            textoTitulo: elemento.titulo,
+                            textoTitulo: homeViewModel.name,
                             textoSubTitulo: elemento.subTitulo,
                             colorSubtitulo: elemento.color,
                             nombreDeImagenes: elemento.imagenes,
-                            anchoDeImagen: elemento.anchoDeImagenes, altoDeImagen: elemento.altoDeImagen)
-                        
+                            anchoDeImagen: elemento.anchoDeImagenes,
+                            altoDeImagen: elemento.altoDeImagen
+                        )
                     }
                 }
                 .padding()
             }
+            
+            Button {
+                homeViewModel.setName(name: "AMIGO")
+            } label: {
+                Text("carlosssssssss")
+            }
+            
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -132,6 +141,6 @@ struct HomePantallaView: View {
 
 struct HomePantallaView_Previews: PreviewProvider {
     static var previews: some View {
-        HomePantallaView()
+        HomePantallaView(homeViewModel: HomeViewModel())
     }
 }

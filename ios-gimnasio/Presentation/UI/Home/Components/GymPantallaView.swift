@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GymPantallaView: View {
     
+    let homeViewModel: HomeViewModel
+    
     let brands = [
         Brand(id: 0, title: "Gold's Gym", image: Assets.Registro.googleIcono.image),
         Brand(id: 1, title: "SmartFit", image: Assets.Registro.googleIcono.image),
@@ -29,17 +31,31 @@ struct GymPantallaView: View {
     ]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(
-                columns: layout
-            ) {
-                ForEach(brands, id: \.id) { brand in
-                    NavigationLink(destination: GymSedesPantallaView()) {
-                        GymCard(brand: brand)
+        ZStack {
+            
+            if(homeViewModel.mostrarSedes) {
+                ScrollView {
+                    LazyVGrid(
+                        columns: layout
+                    ) {
+                        ForEach(brands, id: \.id) { brand in
+                            NavigationLink(destination: GymSedesPantallaView()) {
+                                GymCard(brand: brand)
+                            }
+                        }
                     }
                 }
+            } else {
+                Text("carlos")
+            }
+            
+            
+            Button("Clickkkkkkkk") {
+                homeViewModel.actualizarMostrarSedes(mostrarSedes: true)
             }
         }
+        
+        
     }
     
     private func GymCard(brand: Brand) -> some View {
@@ -65,6 +81,8 @@ struct GymPantallaView: View {
 
 struct GymPantallaView_Previews: PreviewProvider {
     static var previews: some View {
-        GymPantallaView()
+        GymPantallaView(
+            homeViewModel: HomeViewModel()
+        )
     }
 }

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct HomePrincipalPantallaView: View {
+    
+    @StateObject private var homeViewModel = HomeViewModel()
+    
     var body: some View {
         
         NavigationView {
             TabView() {
-                HomePantallaView()
+                HomePantallaView(homeViewModel: homeViewModel)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                     .background(Color("ColorDegradente"))
                     .edgesIgnoringSafeArea(.all)
@@ -21,7 +24,7 @@ struct HomePrincipalPantallaView: View {
                         Text("Home")
                     }
                 
-                GymPantallaView()
+                GymPantallaView(homeViewModel: homeViewModel)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                     .background(Color("ColorDegradente"))
                     .edgesIgnoringSafeArea(.all)

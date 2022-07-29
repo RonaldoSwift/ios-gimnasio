@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B13AF312893163000CC6457 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13AF302893163000CC6457 /* Brand.swift */; };
+		2B13AF3328938C1000CC6457 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B13AF3228938C1000CC6457 /* HomeViewModel.swift */; };
 		2B184692288C714A00C901A8 /* HomePrincipalPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B184691288C714A00C901A8 /* HomePrincipalPantallaView.swift */; };
 		2B184694288C717000C901A8 /* GymSedesPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B184693288C717000C901A8 /* GymSedesPantallaView.swift */; };
 		2B184697288C71F100C901A8 /* GymPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B184696288C71F100C901A8 /* GymPantallaView.swift */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		2B13AF302893163000CC6457 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		2B13AF3228938C1000CC6457 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2B184691288C714A00C901A8 /* HomePrincipalPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePrincipalPantallaView.swift; sourceTree = "<group>"; };
 		2B184693288C717000C901A8 /* GymSedesPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSedesPantallaView.swift; sourceTree = "<group>"; };
 		2B184696288C71F100C901A8 /* GymPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymPantallaView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			children = (
 				2B184695288C718A00C901A8 /* Components */,
 				2B184691288C714A00C901A8 /* HomePrincipalPantallaView.swift */,
+				2B13AF3228938C1000CC6457 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				FBC4DE292890C61500405903 /* Section.swift in Sources */,
 				FB7F71422879120E001DC774 /* BienvenidaPantallaPrincipalView.swift in Sources */,
 				2B86A2EA288323DA001E20A7 /* VideoView.swift in Sources */,
+				2B13AF3328938C1000CC6457 /* HomeViewModel.swift in Sources */,
 				FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */,
 				2B1846A3288C74B000C901A8 /* Components.swift in Sources */,
 				2B86A2E6288322F4001E20A7 /* LoginPantallaView.swift in Sources */,
