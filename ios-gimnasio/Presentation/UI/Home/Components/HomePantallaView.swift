@@ -11,7 +11,7 @@ struct HomePantallaView: View {
     
     let secciones : Array<Section> = [
         Section.init(
-            id:0,
+            id: 0,
             titulo: "Today Workout Plan",
             subTitulo: "6am - 8am",
             imagenes: ["imageRanning1", "Planchas", "CuartoDeImagen"],
@@ -52,7 +52,7 @@ struct HomePantallaView: View {
                     
                     ForEach(secciones, id: \.id){ elemento in
                         SectionGym(
-                            textoTitulo: homeViewModel.name,
+                            textoTitulo: elemento.titulo,
                             textoSubTitulo: elemento.subTitulo,
                             colorSubtitulo: elemento.color,
                             nombreDeImagenes: elemento.imagenes,
@@ -63,13 +63,6 @@ struct HomePantallaView: View {
                 }
                 .padding()
             }
-            
-            Button {
-                homeViewModel.setName(name: "AMIGO")
-            } label: {
-                Text("carlosssssssss")
-            }
-            
         }
         .edgesIgnoringSafeArea(.all)
     }
