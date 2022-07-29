@@ -27,7 +27,7 @@ struct GymPantallaView: View {
         Brand(id: 10, title: "Sportlife Fitness Club", image: Assets.Registro.googleIcono.image)
     ]
     
-    let layout = [
+    let columnas = [
         GridItem(.fixed(200)),
         GridItem(.fixed(200))
     ]
@@ -36,7 +36,7 @@ struct GymPantallaView: View {
         ZStack {
             ScrollView {
                 LazyVGrid(
-                    columns: layout
+                    columns: columnas
                 ) {
                     ForEach(brands, id: \.id) { brand in
                         NavigationLink(destination: GymSedesPantallaView(onButtonHelloClick: onButtonHelloClick)) {
