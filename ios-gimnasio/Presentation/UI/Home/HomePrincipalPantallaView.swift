@@ -29,7 +29,7 @@ struct HomePrincipalPantallaView: View {
                             Text("Home")
                         }.tag(1)
                     NavigationView {
-                        GymPantallaView(homeViewModel: homeViewModel, onButtonHelloClick: {
+                        GymBrandsPantallaView(homeViewModel: homeViewModel, onButtonHelloClick: {
                             isActive = true
                         })
                             .background(Color("ColorDegradente"))
