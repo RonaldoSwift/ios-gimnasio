@@ -85,6 +85,32 @@ struct HomePantallaView: View {
         }
     }
     
+    private func PrimerCuerpo(textoTiTulo: String,textoSubtitulo: String,colorSubtitulo: Color) -> some View {
+        return HStack(alignment: .center){
+            Text(textoTiTulo)
+                .foregroundColor(Color.white)
+                .font(.custom("Poppins-Italic", size: 17))
+            Spacer()
+            Text(textoSubtitulo)
+                .font(.custom("Poppins-Italic", size: 18))
+                .foregroundColor(colorSubtitulo)
+        }
+    }
+    
+    private func PrimerScrollView(nombreDeImagenes: [String], anchoDeImagen: CGFloat, altoDeImagen: CGFloat) -> some View{
+        return ScrollView(.horizontal){
+            HStack(alignment: .center){
+                
+                ForEach(nombreDeImagenes, id: \.self) { elemento in
+                    Image(elemento)
+                        .resizable()
+                        .frame(width: anchoDeImagen, height: altoDeImagen, alignment: .center)
+                    
+                }
+            }
+        }
+    }
+    
     private func Cabezera() -> some View {
         return HStack(alignment: .center, spacing: 50){
             VStack(alignment: .leading){
@@ -104,30 +130,6 @@ struct HomePantallaView: View {
             Image("imageDeChica")
                 .resizable()
                 .frame(width: 60, height: 60)
-        }
-    }
-    private func PrimerCuerpo(textoTiTulo: String,textoSubtitulo: String,colorSubtitulo: Color) -> some View {
-        return HStack(alignment: .center){
-            Text(textoTiTulo)
-                .foregroundColor(Color.white)
-                .font(.custom("Poppins-Italic", size: 17))
-            Spacer()
-            Text(textoSubtitulo)
-                .font(.custom("Poppins-Italic", size: 18))
-                .foregroundColor(colorSubtitulo)
-        }
-    }
-    private func PrimerScrollView(nombreDeImagenes: [String], anchoDeImagen: CGFloat, altoDeImagen: CGFloat) -> some View{
-        return ScrollView(.horizontal){
-            HStack(alignment: .center){
-                
-                ForEach(nombreDeImagenes, id: \.self) { elemento in
-                    Image(elemento)
-                        .resizable()
-                        .frame(width: anchoDeImagen, height: altoDeImagen, alignment: .center)
-                    
-                }
-            }
         }
     }
 }
