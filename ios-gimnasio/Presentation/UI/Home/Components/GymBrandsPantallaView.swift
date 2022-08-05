@@ -11,7 +11,7 @@ struct GymBrandsPantallaView: View {
     
     let homeViewModel: HomeViewModel
     
-    let onButtonHelloClick: () -> Void
+    let onClickCelda: () -> Void
     
     let brands = [
         Brand(id: 0, title: "Gold's Gym", image: Assets.Registro.brand_gold_gym.image),
@@ -30,6 +30,8 @@ struct GymBrandsPantallaView: View {
         GridItem(.fixed(200))
     ]
     
+    
+    
     var body: some View {
         ZStack {
             Color("ColorDegradente")
@@ -38,7 +40,7 @@ struct GymBrandsPantallaView: View {
                     columns: columnas
                 ) {
                     ForEach(brands, id: \.id) { brand in
-                        NavigationLink(destination: GymSedesPantallaView()) {
+                        NavigationLink(destination: GymSedesPantallaView(onClickCelda: onClickCelda)) {
                             GymCard(brand: brand)
                         }.isDetailLink(false)
                     }
@@ -71,9 +73,7 @@ struct GymPantallaView_Previews: PreviewProvider {
     static var previews: some View {
         GymBrandsPantallaView(
             homeViewModel: HomeViewModel(),
-            onButtonHelloClick: {
-                
-            }
+            onClickCelda: {}
         )
     }
 }

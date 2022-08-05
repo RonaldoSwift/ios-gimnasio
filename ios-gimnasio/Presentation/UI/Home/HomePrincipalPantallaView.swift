@@ -28,8 +28,9 @@ struct HomePrincipalPantallaView: View {
                             Image(systemName: "house.fill")
                             Text("Home")
                         }.tag(1)
+                    
                     NavigationView {
-                        GymBrandsPantallaView(homeViewModel: homeViewModel, onButtonHelloClick: {
+                        GymBrandsPantallaView(homeViewModel: homeViewModel, onClickCelda: {
                             isActive = true
                         })
                             .background(Color("ColorDegradente"))

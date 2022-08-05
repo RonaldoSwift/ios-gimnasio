@@ -39,6 +39,7 @@ struct GymSedesPantallaView: View {
             tiempo: "6am-15pm",
             colorDeTiempo: Color("ColorAmarillo"))
     ]
+    let onClickCelda: () -> Void
     
     var body: some View {
         ZStack{
@@ -46,7 +47,7 @@ struct GymSedesPantallaView: View {
             ScrollView(.vertical){
                 VStack(alignment: .center){
                     ForEach(sedes, id: \.id){ sede in
-                        CeldaDeSedeGym(sede: sede)
+                        CeldaDeSedeGym(sede: sede, onClickCelda: onClickCelda)
                     }
                 }
             }
@@ -55,9 +56,8 @@ struct GymSedesPantallaView: View {
         
     }
     
-    private func CeldaDeSedeGym(sede: Sede) -> some View {
-        return VStack{
-            HStack{
+    private func CeldaDeSedeGym(sede: Sede, onClickCelda: @escaping () -> Void) -> some View {
+        return HStack{
                 Image(sede.imagenDeSede)
                     .resizable()
                     .frame(width: 120, height: 120, alignment: .leading)
@@ -80,12 +80,15 @@ struct GymSedesPantallaView: View {
                 }
             }
             .padding()
-        }
+            .onTapGesture {
+                onClickCelda()
+            }
+        
     }
 }
 
 struct GymSedesPantallaView_Previews: PreviewProvider {
     static var previews: some View {
-        GymSedesPantallaView()
+        GymSedesPantallaView(onClickCelda: {})
     }
 }
