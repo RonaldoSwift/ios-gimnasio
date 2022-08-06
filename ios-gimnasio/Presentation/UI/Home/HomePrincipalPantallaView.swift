@@ -72,7 +72,7 @@ struct HomePrincipalPantallaView: View {
                 .navigationBarHidden(true)
                 
                 NavigationLink(
-                    destination: SedeDetailsPantallaView(),
+                    destination: GymSedeDetailPantalla(),
                     isActive: $isActive,
                     label: {
                         EmptyView()
