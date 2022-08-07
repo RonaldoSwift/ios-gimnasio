@@ -15,7 +15,7 @@
 		2B184699288C720100C901A8 /* TrainerPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B184698288C720100C901A8 /* TrainerPantallaView.swift */; };
 		2B18469B288C720E00C901A8 /* UsuarioPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18469A288C720E00C901A8 /* UsuarioPantallaView.swift */; };
 		2B18469D288C724000C901A8 /* HomePantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18469C288C724000C901A8 /* HomePantallaView.swift */; };
-		2B18469F288C72A000C901A8 /* BailePantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18469E288C72A000C901A8 /* BailePantallaView.swift */; };
+		2B18469F288C72A000C901A8 /* NearMePantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18469E288C72A000C901A8 /* NearMePantalla.swift */; };
 		2B1846A3288C74B000C901A8 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A2288C74B000C901A8 /* Components.swift */; };
 		2B1846A5288C75DC00C901A8 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A4288C75DC00C901A8 /* Routes.swift */; };
 		2B77EAF12894482800893D89 /* GymSedeDetailPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77EAF02894482800893D89 /* GymSedeDetailPantalla.swift */; };
@@ -87,7 +87,7 @@
 		2B184698288C720100C901A8 /* TrainerPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerPantallaView.swift; sourceTree = "<group>"; };
 		2B18469A288C720E00C901A8 /* UsuarioPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioPantallaView.swift; sourceTree = "<group>"; };
 		2B18469C288C724000C901A8 /* HomePantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePantallaView.swift; sourceTree = "<group>"; };
-		2B18469E288C72A000C901A8 /* BailePantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BailePantallaView.swift; sourceTree = "<group>"; };
+		2B18469E288C72A000C901A8 /* NearMePantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMePantalla.swift; sourceTree = "<group>"; };
 		2B1846A2288C74B000C901A8 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		2B1846A4288C75DC00C901A8 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		2B77EAF02894482800893D89 /* GymSedeDetailPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSedeDetailPantalla.swift; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 				2B184698288C720100C901A8 /* TrainerPantallaView.swift */,
 				2B18469A288C720E00C901A8 /* UsuarioPantallaView.swift */,
 				2B18469C288C724000C901A8 /* HomePantallaView.swift */,
-				2B18469E288C72A000C901A8 /* BailePantallaView.swift */,
+				2B18469E288C72A000C901A8 /* NearMePantalla.swift */,
 				FBC4DE2C2898AC2200405903 /* Prueba.swift */,
 				FBC4DE2E2898B56D00405903 /* PruebaViewModel.swift */,
 			);
@@ -556,7 +556,7 @@
 				2B1846A5288C75DC00C901A8 /* Routes.swift in Sources */,
 				2B184699288C720100C901A8 /* TrainerPantallaView.swift in Sources */,
 				FB7F7114287906C1001DC774 /* ContentView.swift in Sources */,
-				2B18469F288C72A000C901A8 /* BailePantallaView.swift in Sources */,
+				2B18469F288C72A000C901A8 /* NearMePantalla.swift in Sources */,
 				2B184692288C714A00C901A8 /* HomePrincipalPantallaView.swift in Sources */,
 				2B86A32328834C74001E20A7 /* Assets.swift in Sources */,
 				2B77EAF12894482800893D89 /* GymSedeDetailPantalla.swift in Sources */,
@@ -811,7 +811,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ios-gimnasioTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -830,7 +830,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ios-gimnasioTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

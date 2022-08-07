@@ -13,6 +13,9 @@ class HomeViewModel: ObservableObject {
     @Published var name: String = "carlos"
     @Published var mostrarSedes: Bool = false
     
+    
+    
+    
     func setName(name: String) {
         self.name = name
     }

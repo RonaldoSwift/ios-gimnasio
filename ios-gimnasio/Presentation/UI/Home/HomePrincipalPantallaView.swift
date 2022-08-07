@@ -18,12 +18,8 @@ struct HomePrincipalPantallaView: View {
         NavigationView {
             
             ZStack {
-                
                 TabView(selection: $selectedTab) {
                     HomePantallaView(homeViewModel: homeViewModel)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                        .background(Color("ColorDegradente"))
-                        .edgesIgnoringSafeArea(.all)
                         .tabItem {
                             Image(systemName: "house.fill")
                             Text("Home")
@@ -33,43 +29,31 @@ struct HomePrincipalPantallaView: View {
                         GymBrandsPantallaView(homeViewModel: homeViewModel, onClickCelda: {
                             isActive = true
                         })
-                            .background(Color("ColorDegradente"))
-                            .navigationBarTitle("Marcas", displayMode: .inline)
+                        .navigationBarTitle("Marcas", displayMode: .inline)
                     }
                     .tabItem {
                         Image(systemName: "play.circle")
                         Text("Gym")
                     }.tag(2)
-                        .navigationBarHidden(true)
                     
-                    BailePantallaView()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                        .background(Color("ColorDegradente"))
-                        .edgesIgnoringSafeArea(.all)
+                    NearMePantalla(homeViewModel: homeViewModel)
                         .tabItem {
                             Image(systemName: "house.fill")
                             Text("Cerca a mí")
                         }.tag(3)
                     
                     TrainerPantallaView()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                        .background(Color("ColorDegradente"))
-                        .edgesIgnoringSafeArea(.all)
                         .tabItem {
                             Image(systemName: "house.fill")
                             Text("Trainers")
                         }.tag(4)
                     
                     UsuarioPantallaView()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                        .background(Color("ColorDegradente"))
-                        .edgesIgnoringSafeArea(.all)
                         .tabItem {
                             Image(systemName: "house.fill")
                             Text("Perfil")
                         }.tag(5)
                 }
-                .navigationBarHidden(true)
                 
                 NavigationLink(
                     destination: GymSedeDetailPantalla(),

@@ -64,7 +64,6 @@ struct HomePantallaView: View {
                 .padding()
             }
         }
-        .edgesIgnoringSafeArea(.all)
     }
     
     private func SectionGym(

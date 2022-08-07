@@ -10,7 +10,6 @@ import SwiftUI
 struct TrainerPantallaView: View {
     var body: some View {
         ZStack{
-            Color("ColorDegradente")
             VStack(alignment: .leading){
                 HStack(alignment: .center, spacing: 115){
                     Text("<-")
@@ -40,12 +39,9 @@ struct TrainerPantallaView: View {
                     Text("See all")
                         .foregroundColor(Color.white)
                 }
-                
-                
             }
             .padding()
-        }
-        .edgesIgnoringSafeArea(.all)
+        }.background(Color("ColorDegradente"))
     }
 }
 

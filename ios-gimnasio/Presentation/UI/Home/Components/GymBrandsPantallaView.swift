@@ -47,7 +47,6 @@ struct GymBrandsPantallaView: View {
                 }
             }
         }
-        .edgesIgnoringSafeArea(.all)
     }
     
     private func GymCard(brand: Brand) -> some View {
