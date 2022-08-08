@@ -16,21 +16,48 @@ struct NearMePantalla: View {
         center: CLLocationCoordinate2D.init(
             latitude: 0, longitude: 0
         ),
-        latitudinalMeters: 500,
-        longitudinalMeters: 500
+        latitudinalMeters: 800,
+        longitudinalMeters: 800
     )
     
+    @State private var showSheet = false
+    
+    // REVISAR DOCUMENTACION PARA USAR MAPANNOTATION https://developer.apple.com/documentation/mapkit/mapannotation
     
     var body: some View {
-        
-        Map(coordinateRegion: $region)
-        
-        
+        Map(
+            coordinateRegion: $region,
+            interactionModes: MapInteractionModes.all,
+            showsUserLocation: true,
+            annotationItems: homeViewModel.listStops,
+            annotationContent: {(busStop) -> MapMarker in
+                let coordinate = CLLocationCoordinate2D(
+                    latitude: busStop.latitude,
+                    longitude: busStop.longitude
+                )
+                return MapMarker(coordinate: coordinate, tint: .blue)
+            }
+        ).task {
+            region.center = CLLocationCoordinate2D(
+                latitude: -11.969654934673523,
+                longitude: -77.00567632208029
+            )
+            await homeViewModel.fetch()
+        }
+        .listStyle(PlainListStyle())
+        .sheet(
+            isPresented: $showSheet,
+            onDismiss: { /*cuando el usuario desaparece el modal*/ }) {
+                
+            }
     }
 }
 
 struct BailePantallaView_Previews: PreviewProvider {
     static var previews: some View {
-        NearMePantalla(homeViewModel: HomeViewModel())
+        Group {
+            NearMePantalla(homeViewModel: HomeViewModel())
+            NearMePantalla(homeViewModel: HomeViewModel())
+        }
     }
 }

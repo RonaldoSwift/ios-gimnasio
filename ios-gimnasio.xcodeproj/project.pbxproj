@@ -18,6 +18,9 @@
 		2B18469F288C72A000C901A8 /* NearMePantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18469E288C72A000C901A8 /* NearMePantalla.swift */; };
 		2B1846A3288C74B000C901A8 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A2288C74B000C901A8 /* Components.swift */; };
 		2B1846A5288C75DC00C901A8 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A4288C75DC00C901A8 /* Routes.swift */; };
+		2B50CC1D28A0C0F9003AE4C1 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CC1C28A0C0F9003AE4C1 /* BusStop.swift */; };
+		2B50CC2028A0CE7E003AE4C1 /* SwiftCoroutine in Frameworks */ = {isa = PBXBuildFile; productRef = 2B50CC1F28A0CE7E003AE4C1 /* SwiftCoroutine */; };
+		2B50CC2328A0CF95003AE4C1 /* GalwaysBusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CC2228A0CF95003AE4C1 /* GalwaysBusRepository.swift */; };
 		2B77EAF12894482800893D89 /* GymSedeDetailPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77EAF02894482800893D89 /* GymSedeDetailPantalla.swift */; };
 		2B86A2E6288322F4001E20A7 /* LoginPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2E5288322F4001E20A7 /* LoginPantallaView.swift */; };
 		2B86A2E82883236D001E20A7 /* RegistroPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2E72883236D001E20A7 /* RegistroPantallaView.swift */; };
@@ -90,6 +93,8 @@
 		2B18469E288C72A000C901A8 /* NearMePantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMePantalla.swift; sourceTree = "<group>"; };
 		2B1846A2288C74B000C901A8 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		2B1846A4288C75DC00C901A8 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		2B50CC1C28A0C0F9003AE4C1 /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		2B50CC2228A0CF95003AE4C1 /* GalwaysBusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalwaysBusRepository.swift; sourceTree = "<group>"; };
 		2B77EAF02894482800893D89 /* GymSedeDetailPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSedeDetailPantalla.swift; sourceTree = "<group>"; };
 		2B86A2E5288322F4001E20A7 /* LoginPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPantallaView.swift; sourceTree = "<group>"; };
 		2B86A2E72883236D001E20A7 /* RegistroPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroPantallaView.swift; sourceTree = "<group>"; };
@@ -143,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B50CC2028A0CE7E003AE4C1 /* SwiftCoroutine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +245,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		2B50CC2128A0CF6C003AE4C1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2B50CC2228A0CF95003AE4C1 /* GalwaysBusRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		2B77EAEF289447D400893D89 /* Matricula */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +283,7 @@
 		2B86A2ED2883275B001E20A7 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				2B50CC2128A0CF6C003AE4C1 /* Repositories */,
 				FB7F7143287F1DD7001DC774 /* models */,
 			);
 			path = Domain;
@@ -397,6 +412,7 @@
 				2B13AF2F2893161F00CC6457 /* Gym */,
 				FB7F7145287FB5D2001DC774 /* prueba.swift */,
 				FBC4DE282890C61500405903 /* Section.swift */,
+				2B50CC1C28A0C0F9003AE4C1 /* BusStop.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -417,6 +433,9 @@
 			dependencies = (
 			);
 			name = "ios-gimnasio";
+			packageProductDependencies = (
+				2B50CC1F28A0CE7E003AE4C1 /* SwiftCoroutine */,
+			);
 			productName = "ios-gimnasio";
 			productReference = FB7F710E287906C1001DC774 /* ios-gimnasio.app */;
 			productType = "com.apple.product-type.application";
@@ -490,6 +509,9 @@
 				es,
 			);
 			mainGroup = FB7F7105287906C0001DC774;
+			packageReferences = (
+				2B50CC1E28A0CE7E003AE4C1 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */,
+			);
 			productRefGroup = FB7F710F287906C1001DC774 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -552,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC4DE2D2898AC2200405903 /* Prueba.swift in Sources */,
+				2B50CC2328A0CF95003AE4C1 /* GalwaysBusRepository.swift in Sources */,
 				FB7F711B287906C9001DC774 /* Persistence.swift in Sources */,
 				2B1846A5288C75DC00C901A8 /* Routes.swift in Sources */,
 				2B184699288C720100C901A8 /* TrainerPantallaView.swift in Sources */,
@@ -576,6 +599,7 @@
 				2B13AF3328938C1000CC6457 /* HomeViewModel.swift in Sources */,
 				FBC4DE2F2898B56D00405903 /* PruebaViewModel.swift in Sources */,
 				FB7F7146287FB5D3001DC774 /* prueba.swift in Sources */,
+				2B50CC1D28A0C0F9003AE4C1 /* BusStop.swift in Sources */,
 				2B1846A3288C74B000C901A8 /* Components.swift in Sources */,
 				2B86A2E6288322F4001E20A7 /* LoginPantallaView.swift in Sources */,
 				FB7F7112287906C1001DC774 /* ios_gimnasioApp.swift in Sources */,
@@ -679,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -735,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -915,6 +939,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B50CC1E28A0CE7E003AE4C1 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/belozierov/SwiftCoroutine";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B50CC1F28A0CE7E003AE4C1 /* SwiftCoroutine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B50CC1E28A0CE7E003AE4C1 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */;
+			productName = SwiftCoroutine;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FB7F711C287906C9001DC774 /* ios_gimnasio.xcdatamodeld */ = {

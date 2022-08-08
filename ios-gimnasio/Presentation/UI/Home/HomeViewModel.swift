@@ -10,11 +10,18 @@ import Foundation
 @MainActor
 class HomeViewModel: ObservableObject {
     
+    private var galwaysRepository: GalwaysBusRepository = GalwaysBusRepository()
+    
     @Published var name: String = "carlos"
     @Published var mostrarSedes: Bool = false
     
+    @Published private(set) var listStops: [BusStop] = []
+
     
-    
+    func fetch() async {
+        let nearestStops = await galwaysRepository.fetchNearestStops()
+        self.listStops = nearestStops
+    }
     
     func setName(name: String) {
         self.name = name
