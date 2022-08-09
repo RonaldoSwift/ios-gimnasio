@@ -18,8 +18,8 @@ class GalwaysBusRepository {
                 shortName: "",
                 longName: "",
                 stopRef: "",
-                latitude: -11.967750655284977,
-                longitude: -77.00428152896053
+                latitude: -11.961055800472543,
+                longitude: -77.00416637250459
             ),
             BusStop(
                 id: "0",

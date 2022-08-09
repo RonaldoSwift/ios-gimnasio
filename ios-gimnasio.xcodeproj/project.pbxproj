@@ -62,6 +62,7 @@
 		FBC4DE2B28984EE800405903 /* Sede.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DE2A28984EE800405903 /* Sede.swift */; };
 		FBC4DE2D2898AC2200405903 /* Prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DE2C2898AC2200405903 /* Prueba.swift */; };
 		FBC4DE2F2898B56D00405903 /* PruebaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC4DE2E2898B56D00405903 /* PruebaViewModel.swift */; };
+		FBD0A41F28A1B2F100719745 /* ModalDeMatriculaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0A41E28A1B2F100719745 /* ModalDeMatriculaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		FBC4DE2A28984EE800405903 /* Sede.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sede.swift; sourceTree = "<group>"; };
 		FBC4DE2C2898AC2200405903 /* Prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba.swift; sourceTree = "<group>"; };
 		FBC4DE2E2898B56D00405903 /* PruebaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaViewModel.swift; sourceTree = "<group>"; };
+		FBD0A41E28A1B2F100719745 /* ModalDeMatriculaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDeMatriculaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 				2B18469E288C72A000C901A8 /* NearMePantalla.swift */,
 				FBC4DE2C2898AC2200405903 /* Prueba.swift */,
 				FBC4DE2E2898B56D00405903 /* PruebaViewModel.swift */,
+				FBD0A41E28A1B2F100719745 /* ModalDeMatriculaView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD0A41F28A1B2F100719745 /* ModalDeMatriculaView.swift in Sources */,
 				FBC4DE2D2898AC2200405903 /* Prueba.swift in Sources */,
 				2B50CC2328A0CF95003AE4C1 /* GalwaysBusRepository.swift in Sources */,
 				FB7F711B287906C9001DC774 /* Persistence.swift in Sources */,

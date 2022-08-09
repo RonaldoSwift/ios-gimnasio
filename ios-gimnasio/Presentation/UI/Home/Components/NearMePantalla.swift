@@ -16,8 +16,8 @@ struct NearMePantalla: View {
         center: CLLocationCoordinate2D.init(
             latitude: 0, longitude: 0
         ),
-        latitudinalMeters: 800,
-        longitudinalMeters: 800
+        latitudinalMeters: 1500,
+        longitudinalMeters: 1500
     )
     
     @State private var showSheet = false
