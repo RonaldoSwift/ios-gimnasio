@@ -12,6 +12,10 @@ class HomeViewModel: ObservableObject {
     
     private var galwaysRepository: GalwaysBusRepository = GalwaysBusRepository()
     
+    //Brands
+    @Published var brands: [Brand] = []
+    
+    
     @Published var name: String = "carlos"
     @Published var mostrarSedes: Bool = false
     
@@ -29,6 +33,10 @@ class HomeViewModel: ObservableObject {
     
     func actualizarMostrarSedes(mostrarSedes: Bool) {
         self.mostrarSedes = mostrarSedes
+    }
+    
+    func getBrands() async {
+        brands = await galwaysRepository.getBrands()
     }
     
 }

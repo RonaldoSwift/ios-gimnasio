@@ -9,6 +9,8 @@ import Foundation
 
 class GalwaysBusRepository {
     
+    private let gimnasioApiImpl = GimnasioApiImpl()
+    
     // bus/center polleria -11.969654934673523, -77.00567632208029
     
     func fetchNearestStops() async -> [BusStop] {
@@ -47,5 +49,24 @@ class GalwaysBusRepository {
             )
         ]
         return busStops
+    }
+    
+    func getBrands() async -> [Brand] {
+        do {
+            let brandsResponse = try await gimnasioApiImpl.getBrands(
+                getBrandsRequest: GetBrandsRequest(name: "", imageCode: 0)
+            )
+            let brands = brandsResponse.map { getBrandsResponse in
+                Brand(
+                    id: getBrandsResponse.id,
+                    title: getBrandsResponse.name,
+                    image: Assets.Registro.brand_megaforce.image
+                )
+            }
+            return brands
+        } catch {
+            print("Oops!")
+            return []
+        }
     }
 }

@@ -19,8 +19,12 @@
 		2B1846A3288C74B000C901A8 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A2288C74B000C901A8 /* Components.swift */; };
 		2B1846A5288C75DC00C901A8 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1846A4288C75DC00C901A8 /* Routes.swift */; };
 		2B50CC1D28A0C0F9003AE4C1 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CC1C28A0C0F9003AE4C1 /* BusStop.swift */; };
-		2B50CC2028A0CE7E003AE4C1 /* SwiftCoroutine in Frameworks */ = {isa = PBXBuildFile; productRef = 2B50CC1F28A0CE7E003AE4C1 /* SwiftCoroutine */; };
 		2B50CC2328A0CF95003AE4C1 /* GalwaysBusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B50CC2228A0CF95003AE4C1 /* GalwaysBusRepository.swift */; };
+		2B5F596228ACA4AB008C1267 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2B5F596128ACA4AB008C1267 /* Alamofire */; };
+		2B5F596528ACA6CB008C1267 /* GimansioApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F596428ACA6CB008C1267 /* GimansioApi.swift */; };
+		2B5F596728ACA7D2008C1267 /* GimnasioApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F596628ACA7D2008C1267 /* GimnasioApiImpl.swift */; };
+		2B5F596928ACAE4B008C1267 /* GetBrandsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F596828ACAE4B008C1267 /* GetBrandsResponse.swift */; };
+		2B5F596B28ACB295008C1267 /* GetBrandsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F596A28ACB295008C1267 /* GetBrandsRequest.swift */; };
 		2B77EAF12894482800893D89 /* GymSedeDetailPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77EAF02894482800893D89 /* GymSedeDetailPantalla.swift */; };
 		2B86A2E6288322F4001E20A7 /* LoginPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2E5288322F4001E20A7 /* LoginPantallaView.swift */; };
 		2B86A2E82883236D001E20A7 /* RegistroPantallaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86A2E72883236D001E20A7 /* RegistroPantallaView.swift */; };
@@ -95,6 +99,10 @@
 		2B1846A4288C75DC00C901A8 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		2B50CC1C28A0C0F9003AE4C1 /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
 		2B50CC2228A0CF95003AE4C1 /* GalwaysBusRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalwaysBusRepository.swift; sourceTree = "<group>"; };
+		2B5F596428ACA6CB008C1267 /* GimansioApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimansioApi.swift; sourceTree = "<group>"; };
+		2B5F596628ACA7D2008C1267 /* GimnasioApiImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimnasioApiImpl.swift; sourceTree = "<group>"; };
+		2B5F596828ACAE4B008C1267 /* GetBrandsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrandsResponse.swift; sourceTree = "<group>"; };
+		2B5F596A28ACB295008C1267 /* GetBrandsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBrandsRequest.swift; sourceTree = "<group>"; };
 		2B77EAF02894482800893D89 /* GymSedeDetailPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSedeDetailPantalla.swift; sourceTree = "<group>"; };
 		2B86A2E5288322F4001E20A7 /* LoginPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPantallaView.swift; sourceTree = "<group>"; };
 		2B86A2E72883236D001E20A7 /* RegistroPantallaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroPantallaView.swift; sourceTree = "<group>"; };
@@ -148,7 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B50CC2028A0CE7E003AE4C1 /* SwiftCoroutine in Frameworks */,
+				2B5F596228ACA4AB008C1267 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +261,17 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		2B5F596328ACA6B5008C1267 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2B5F596428ACA6CB008C1267 /* GimansioApi.swift */,
+				2B5F596628ACA7D2008C1267 /* GimnasioApiImpl.swift */,
+				2B5F596828ACAE4B008C1267 /* GetBrandsResponse.swift */,
+				2B5F596A28ACB295008C1267 /* GetBrandsRequest.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		2B77EAEF289447D400893D89 /* Matricula */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +294,7 @@
 		2B86A2EC28832752001E20A7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2B5F596328ACA6B5008C1267 /* DataSource */,
 				2B86A2F8288332F7001E20A7 /* data.swift */,
 			);
 			path = Data;
@@ -434,7 +454,7 @@
 			);
 			name = "ios-gimnasio";
 			packageProductDependencies = (
-				2B50CC1F28A0CE7E003AE4C1 /* SwiftCoroutine */,
+				2B5F596128ACA4AB008C1267 /* Alamofire */,
 			);
 			productName = "ios-gimnasio";
 			productReference = FB7F710E287906C1001DC774 /* ios-gimnasio.app */;
@@ -510,7 +530,7 @@
 			);
 			mainGroup = FB7F7105287906C0001DC774;
 			packageReferences = (
-				2B50CC1E28A0CE7E003AE4C1 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */,
+				2B5F596028ACA4AB008C1267 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = FB7F710F287906C1001DC774 /* Products */;
 			projectDirPath = "";
@@ -573,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5F596928ACAE4B008C1267 /* GetBrandsResponse.swift in Sources */,
 				FBC4DE2D2898AC2200405903 /* Prueba.swift in Sources */,
 				2B50CC2328A0CF95003AE4C1 /* GalwaysBusRepository.swift in Sources */,
 				FB7F711B287906C9001DC774 /* Persistence.swift in Sources */,
@@ -582,6 +603,7 @@
 				2B18469F288C72A000C901A8 /* NearMePantalla.swift in Sources */,
 				2B184692288C714A00C901A8 /* HomePrincipalPantallaView.swift in Sources */,
 				2B86A32328834C74001E20A7 /* Assets.swift in Sources */,
+				2B5F596B28ACB295008C1267 /* GetBrandsRequest.swift in Sources */,
 				2B77EAF12894482800893D89 /* GymSedeDetailPantalla.swift in Sources */,
 				FBC4DE2B28984EE800405903 /* Sede.swift in Sources */,
 				2B18469B288C720E00C901A8 /* UsuarioPantallaView.swift in Sources */,
@@ -591,6 +613,8 @@
 				2B86A2F9288332F7001E20A7 /* data.swift in Sources */,
 				2B184694288C717000C901A8 /* GymSedesPantallaView.swift in Sources */,
 				2B86A2E82883236D001E20A7 /* RegistroPantallaView.swift in Sources */,
+				2B5F596528ACA6CB008C1267 /* GimansioApi.swift in Sources */,
+				2B5F596728ACA7D2008C1267 /* GimnasioApiImpl.swift in Sources */,
 				2B86A2F728832C0A001E20A7 /* L10n.swift in Sources */,
 				2B184697288C71F100C901A8 /* GymBrandsPantallaView.swift in Sources */,
 				FBC4DE292890C61500405903 /* Section.swift in Sources */,
@@ -941,21 +965,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2B50CC1E28A0CE7E003AE4C1 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */ = {
+		2B5F596028ACA4AB008C1267 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/belozierov/SwiftCoroutine";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2B50CC1F28A0CE7E003AE4C1 /* SwiftCoroutine */ = {
+		2B5F596128ACA4AB008C1267 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B50CC1E28A0CE7E003AE4C1 /* XCRemoteSwiftPackageReference "SwiftCoroutine" */;
-			productName = SwiftCoroutine;
+			package = 2B5F596028ACA4AB008C1267 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Brand: Identifiable {
-    let id: Int
+    let id: String
     let title: String
     let image: ImageAsset.Image
 }
